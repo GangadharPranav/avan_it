@@ -215,23 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentPageName = window.location.pathname.split('/').pop() || 'index.html';
   const isIndexPage = currentPageName === 'index.html' || currentPageName === 'index' || currentPageName === '';
 
-  // ── Conditional Preloader (first visit to index only) ──
-  const hasPreloaded = sessionStorage.getItem('avan_preloaded');
-  if (isIndexPage && !hasPreloaded) {
-    // First visit — show preloader
-    const PRELOADER_HTML = `
-    <div id="loading-screen" aria-busy="true" role="status">
-      <div class="loader-logo">AVAN IT SOLUTIONS</div>
-      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-      <p style="color:var(--text-muted);font-size:0.7rem;letter-spacing:3px;margin-top:6px;font-family:'JetBrains Mono',monospace">INITIALIZING...</p>
-    </div>`;
-    document.body.insertAdjacentHTML('afterbegin', PRELOADER_HTML);
-  }
-  // Mark as preloaded for future page loads in this session
-  if (isIndexPage && !hasPreloaded) {
-    sessionStorage.setItem('avan_preloaded', '1');
-  }
-
   // ── Inject Ambient Overlay Layers ──
   const NETWORK_LAYERS_HTML = `
     <div id="kage-vignette" aria-hidden="true"></div>
@@ -788,8 +771,10 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // Inject at the very start of body (before nav)
-    document.body.insertAdjacentHTML('afterbegin', videoBgHTML);
+    // Inject at the very start of body (before nav) if not already present in HTML
+    if (!document.getElementById('global-video-bg')) {
+      document.body.insertAdjacentHTML('afterbegin', videoBgHTML);
+    }
 
     const bgVideo = document.getElementById('bg-video');
 

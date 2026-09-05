@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
   <title>AVAN IT Solutions | Enterprise Intelligence Network</title>
   <meta name="description" content="AVAN IT Solutions — Consulting-led digital strategy, SAP S/4HANA modernization, multi-cloud architecture, and AI-native platform engineering." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300f0ff'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
@@ -36,6 +37,10 @@
   </script>
 
   <style>
+    :root, html {
+      background-color: #090d14 !important;
+      color-scheme: dark;
+    }
     body {
       background-color: transparent !important;
       color: #f1f5f9;
@@ -77,6 +82,24 @@
   </style>
 </head>
 <body class="bg-transparent text-[#f1f5f9]">
+
+  <!-- Instant Background Video Layer (Pre-rendered in DOM to eliminate any white flash / load lag) -->
+  <div id="global-video-bg" aria-hidden="true">
+    <video
+      id="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      x5-playsinline
+      preload="auto"
+    >
+      <source src="images/its_an_it_solutions_company_ma.mp4" type="video/mp4">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-blue-and-purple-liquid-waves-33824-large.mp4" type="video/mp4">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-glowing-blue-particles-wave-animation-36024-large.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- Shared Component Injector (Nav, Footer, Search Modal, Theme) -->
   <script src="js/components.js?v=3.0.0"></script>
