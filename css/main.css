@@ -356,6 +356,9 @@ main, .page, .hero, section, footer.footer, nav.navbar {
   grid-template-columns: repeat(3, 1fr) 200px;
   gap: 0;
 }
+#mega-company .mega-inner {
+  grid-template-columns: repeat(2, 1fr) 260px;
+}
 .mega-col {
   padding: 0 20px;
   border-right: 1px solid rgba(255,255,255,0.06);

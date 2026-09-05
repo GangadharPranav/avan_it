@@ -91,10 +91,6 @@ const NAV_HTML = `
               <a href="careers.html" class="mega-link">💼 Career Opportunities</a>
               <a href="early-careers.html" class="mega-link">🌱 Students &amp; Early Careers</a>
             </div>
-            <div class="mega-col">
-              <div class="mega-col-label">Enterprise Proof</div>
-              <a href="clients.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🏆 Production Use Cases</a>
-            </div>
             <div class="mega-featured">
               <div class="mega-featured-label">Featured Outcomes</div>
               <div class="mega-featured-card">
