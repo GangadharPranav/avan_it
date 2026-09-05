@@ -1845,6 +1845,7 @@ html.light .site-logo-img + div span:first-child,
 html.light .nav-logo span:first-child {
   background: linear-gradient(90deg, #00838f, #7000ff) !important;
   -webkit-background-clip: text !important;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 html.light .site-logo-img + div span:last-child,

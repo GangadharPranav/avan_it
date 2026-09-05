@@ -16,7 +16,7 @@ const NAV_HTML = `
         <div class="logo-mark" style="width:36px;height:36px;font-size:0.95rem;margin:0;" aria-hidden="true">AV</div>
       </div>
       <div class="nav-logo-text" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
-        <span style="font-size:1.05rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:1.1; white-space:nowrap;">AVAN IT Solutions</span>
+        <span style="font-size:1.05rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; line-height:1.1; white-space:nowrap;">AVAN IT Solutions</span>
         <span class="logo-tagline" style="color:var(--gold); font-size:0.55rem; font-family:'Sora',sans-serif; font-weight:600; letter-spacing:0.4px; line-height:1.1; white-space:nowrap;">Connecting Intelligence &amp; Avant-Garde Innovation</span>
       </div>
     </a>
@@ -139,7 +139,7 @@ const FOOTER_HTML = `
             <div class="logo-mark" style="width:40px;height:40px;font-size:1rem;margin:0;" aria-hidden="true">AV</div>
           </div>
           <div style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
-            <span style="font-size:1.1rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:1;">AVAN IT Solutions</span>
+            <span style="font-size:1.1rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; line-height:1;">AVAN IT Solutions</span>
             <span style="color:var(--gold); font-size:0.58rem; font-family:'Sora',sans-serif; font-weight:600; letter-spacing:0.4px; line-height:1.2; white-space:nowrap;">Connecting Intelligence &amp; Avant-Garde Innovation</span>
           </div>
         </a>
