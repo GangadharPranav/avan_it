@@ -14,9 +14,9 @@
   --muted: #64748b;
 
   --bg-dark: transparent;
-  --bg-card: rgba(15, 21, 34, 0.28);
-  --bg-scrim: linear-gradient(135deg, rgba(9, 13, 20, 0.35), rgba(9, 13, 20, 0.15));
-  --bg-glass: rgba(255, 255, 255, 0.04);
+  --bg-card: transparent;
+  --bg-scrim: transparent;
+  --bg-glass: rgba(255, 255, 255, 0.03);
   --border-glass: rgba(241, 245, 249, 0.12);
   --border-glow: rgba(0, 240, 255, 0.35);
   
@@ -56,9 +56,9 @@
 
 /* Chapter Scrim Cards & Text Panels */
 .chapter-scrim {
-  background: var(--bg-scrim);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border: 1px solid rgba(241, 245, 249, 0.14);
   border-radius: var(--radius-lg);
   padding: 48px;
@@ -647,18 +647,18 @@ main, .page, .hero, section, footer.footer, nav.navbar {
 }
 
 .glass-card {
-  background: rgba(15, 21, 34, 0.28);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 .glass-card:hover {
-  background: rgba(15, 21, 34, 0.42);
+  background: rgba(255, 255, 255, 0.05);
   border-color: rgba(0, 229, 255, 0.4);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
   transform: translateY(-6px);
 }
 
@@ -1185,10 +1185,11 @@ body.has-video-bg .page-hero::before {
 .tech-card,
 .profile-card,
 .chapter-scrim {
-  background: rgba(15, 21, 34, 0.28) !important;
-  backdrop-filter: blur(16px) saturate(140%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
 }
 
 .glass-card:hover,
@@ -1215,9 +1216,9 @@ body.has-video-bg .page-hero::before {
 .service-card:hover,
 .feature-card:hover,
 .tech-card:hover {
-  background: rgba(15, 21, 34, 0.42) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
   border-color: rgba(0, 229, 255, 0.4) !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 229, 255, 0.2) !important;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.2) !important;
 }
 
 /* Video background — always visible, covers full viewport on all orientations */

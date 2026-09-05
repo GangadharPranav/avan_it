@@ -43,6 +43,37 @@
       overflow-x: hidden;
     }
     body > header, body > footer, body > nav.md\:hidden { display: none !important; }
+
+    /* Fully transparent blocks for 100% background video clarity */
+    .chapter-scrim {
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      box-shadow: none !important;
+    }
+    .chapter-scrim .p-4,
+    .chapter-scrim [class*="bg-white/5"],
+    .chapter-scrim [class*="bg-[#121317]"],
+    .chapter-scrim [class*="bg-[#131315]"],
+    .card-3d-tilt {
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      box-shadow: none !important;
+    }
+    .chapter-scrim .p-4:hover {
+      background: rgba(255, 255, 255, 0.04) !important;
+      border-color: rgba(0, 240, 255, 0.4) !important;
+    }
+    .chapter-scrim h1, 
+    .chapter-scrim h2, 
+    .chapter-scrim p, 
+    .chapter-scrim span, 
+    .chapter-scrim div {
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
   </style>
 </head>
 <body class="bg-transparent text-[#f1f5f9]">
