@@ -85,17 +85,24 @@ const NAV_HTML = `
               <a href="alumni.html" class="mega-link">🎓 AVAN Alumni Network</a>
             </div>
             <div class="mega-col">
-              <div class="mega-col-label">Enterprise Use Cases</div>
-              <a href="clients.html" class="mega-link">🏆 Production Use Cases</a>
-              <a href="clients.html#supplier-portal" class="mega-link">📋 Supplier Registration Portal</a>
-              <a href="clients.html#smart-glasses" class="mega-link">🥽 AI Smart Glasses Warehouse</a>
-            </div>
-            <div class="mega-col">
               <div class="mega-col-label">Innovation &amp; Talent</div>
               <a href="innovation-labs.html" class="mega-link">🔬 AI Center of Excellence (CoE)</a>
               <a href="learning.html" class="mega-link">🎓 Learning &amp; Development</a>
               <a href="careers.html" class="mega-link">💼 Career Opportunities</a>
               <a href="early-careers.html" class="mega-link">🌱 Students &amp; Early Careers</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-label">Enterprise Proof</div>
+              <a href="clients.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🏆 Production Use Cases</a>
+            </div>
+            <div class="mega-featured">
+              <div class="mega-featured-label">Featured Outcomes</div>
+              <div class="mega-featured-card">
+                <div style="font-size:1.8rem;margin-bottom:6px">🏆</div>
+                <strong>Production Use Cases</strong>
+                <p>Single unified showcase of all enterprise systems: Supplier Portals, Warehouse Smart Glasses, SAP MCP Servers &amp; RAG.</p>
+                <a href="clients.html" class="mega-cta">View All Use Cases →</a>
+              </div>
             </div>
           </div>
         </div>
@@ -166,7 +173,7 @@ const FOOTER_HTML = `
           <h4>Insights &amp; Ecosystem</h4>
           <a href="insights.html">Insights &amp; Research</a>
           <a href="innovation-labs.html">AI Innovation Hub (CoE)</a>
-          <a href="clients.html">Enterprise Use Cases</a>
+          <a href="clients.html">Production Use Cases</a>
           <a href="tech-stack.html">Technology Ecosystem</a>
           <a href="alumni.html">AVAN Alumni Network</a>
         </div>
