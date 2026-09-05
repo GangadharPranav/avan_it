@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Engineering & Modern Analytics Platforms — AVAN IT Solutions</title>
+  <meta name="description" content="Resolve Tech benchmarked Data Engineering, Snowflake & Databricks integrations, Enterprise Data Lakes, and real-time streaming analytics." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00e5ff",
+            "secondary": "#9d4dff",
+            "surface-dark": "#0a0a0b"
+          },
+          fontFamily: {
+            "sans": ["Sora", "sans-serif"],
+            "display": ["Space Grotesk", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color:transparent !important; color:#e5e1e4; font-family:'Sora',sans-serif; overflow-x:hidden; }
+    .glass-card-data {
+      background: rgba(16, 17, 20, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card-data:hover {
+      background: rgba(16, 17, 20, 0.42);
+      border-color: rgba(0, 229, 255, 0.45);
+      box-shadow: 0 15px 40px -10px rgba(0, 229, 255, 0.25);
+    }
+    body > header, body > footer { display:none !important; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-[#00e5ff]/20 selection:text-[#00e5ff]">
+  <script src="js/components.js?v=1.0.6"></script>
+
+  <main class="relative z-10 pt-28 pb-32">
+    <!-- Hero Section -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00e5ff]/30 bg-[#00e5ff]/10 text-[#00e5ff] font-bold text-xs uppercase tracking-widest mb-6">
+        <span class="material-symbols-outlined text-sm">database</span>
+        Resolve Tech Benchmarked Data Practice
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+            Modern Data Lakes & <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] via-[#9d4dff] to-[#ffd700]">Real-Time Streaming Analytics.</span>
+          </h1>
+          <p class="text-[#bac9cc] text-base sm:text-lg leading-relaxed mb-8">
+            Transform raw enterprise data into actionable intelligence. We architect cloud data warehouses using Snowflake, Databricks, and Apache Kafka, feeding clean data directly into AI feature stores and executive PowerBI dashboards.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="contact.html" class="px-8 py-4 bg-gradient-to-r from-[#00e5ff] to-[#7000ff] text-black font-bold rounded-xl hover:brightness-110 transition-all shadow-lg shadow-[#00e5ff]/20">
+              Request Data Platform Audit →
+            </a>
+            <a href="ai-machine-learning.html" class="px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all">
+              Explore AI Engineering
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="w-full h-80 rounded-3xl overflow-hidden border border-[#00e5ff]/30 relative group shadow-2xl">
+            <img src="images/ai_blueprint_insight.png" alt="Modern Data Lake & Analytics Platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Data Engineering Pillars -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-24">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#00e5ff] block mb-2">Capabilities</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Enterprise Data Solutions</h2>
+        <p class="text-[#bac9cc] text-sm md:text-base">Robust data governance and high-performance ingestion pipelines.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="glass-card-data rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/30 flex items-center justify-center text-[#00e5ff] mb-6">
+              <span class="material-symbols-outlined text-2xl">schema</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Snowflake &amp; Databricks Lakehouses</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed">
+              Unified delta lake architectures enabling instant SQL queries across petabytes of structured and unstructured data.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card-data rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#9d4dff]/10 border border-[#9d4dff]/30 flex items-center justify-center text-[#9d4dff] mb-6">
+              <span class="material-symbols-outlined text-2xl">stream</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Real-Time Kafka Streaming</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed">
+              Low-latency event streaming pipelines capturing IoT sensor data, ERP transactions, and web clickstreams.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card-data rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#ffd700]/10 border border-[#ffd700]/30 flex items-center justify-center text-[#ffd700] mb-6">
+              <span class="material-symbols-outlined text-2xl">verified_user</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Data Governance &amp; Security</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed">
+              Automated data cataloging, PII masking, lineage tracking, and role-based access control (RBAC).
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card-data rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/30 flex items-center justify-center text-[#00e5ff] mb-6">
+              <span class="material-symbols-outlined text-2xl">monitoring</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">BI &amp; Executive Dashboards</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed">
+              Sub-second PowerBI and Tableau reports giving executives real-time visibility into revenue, SLA, and inventory.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Architecture Section -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-20">
+      <div class="glass-card-data rounded-3xl p-10 md:p-14 border border-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <span class="px-3 py-1 bg-[#00e5ff]/10 border border-[#00e5ff]/30 text-[#00e5ff] font-bold text-xs rounded-full uppercase tracking-wider inline-block">Data Platform Architecture</span>
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-white leading-tight">
+              Enterprise Modern Data Stack.
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed">
+              Our data engineering practice implements automated dbt transformation models and Airflow orchestrations, ensuring 99.99% data pipeline reliability.
+            </p>
+            <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#00e5ff] hover:underline">
+              Request Data Engineering Consultation →
+            </a>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="w-full h-80 rounded-2xl overflow-hidden border border-white/10 relative">
+              <img src="images/tech_stack_hero.png" alt="Enterprise Data Stack Architecture" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js?v=1.0.6"></script>
+</body>
+</html>

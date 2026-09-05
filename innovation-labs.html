@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Innovation Hub & CoE — AVAN IT Solutions</title>
+  <meta name="description" content="Explore AVAN's AI Innovation Hub & Center of Excellence (CoE). R&D, Generative AI sandboxes, rapid prototyping, and enterprise transformation labs." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System & Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00e5ff",
+            "secondary": "#9d4dff",
+            "accent-gold": "#ffd700",
+            "surface-dark": "#0a0a0b",
+            "card-bg": "rgba(19, 19, 23, 0.75)",
+            "on-surface": "#e5e1e4",
+            "on-surface-subtle": "#bac9cc"
+          },
+          fontFamily: {
+            "sans": ["Sora", "sans-serif"],
+            "display": ["Space Grotesk", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: transparent !important;
+      color: #e5e1e4;
+      font-family: 'Sora', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass-card-lab {
+      background: rgba(16, 17, 20, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card-lab:hover {
+      background: rgba(16, 17, 20, 0.42);
+      border-color: rgba(0, 229, 255, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px -10px rgba(0, 229, 255, 0.2);
+    }
+    body > header, body > footer { display: none !important; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-[#00e5ff]/20 selection:text-[#00e5ff]">
+
+  <!-- Shared Nav + Video BG injected by components.js -->
+  <script src="js/components.js?v=1.0.6"></script>
+
+  <main class="relative z-10 pt-28 pb-32">
+    <!-- Hero Header -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-20 text-center md:text-left">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00e5ff]/30 bg-[#00e5ff]/10 text-[#00e5ff] font-bold text-xs uppercase tracking-widest mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#00e5ff] animate-ping"></span>
+        AVAN Center of Excellence (CoE)
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+        <div class="md:col-span-8">
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+            AI Innovation Hub & <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] via-[#9d4dff] to-[#ffd700]">Emerging Tech Labs.</span>
+          </h1>
+          <p class="text-[#bac9cc] text-base sm:text-lg max-w-2xl leading-relaxed">
+            Where enterprise client teams collaborate with AVAN AI researchers to prototype, test, and deploy production-ready Generative AI and automated ERP solutions.
+          </p>
+        </div>
+        <div class="md:col-span-4 flex md:justify-end">
+          <a href="contact.html" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00e5ff] to-[#7000ff] text-black font-bold rounded-xl hover:brightness-110 transition-all shadow-lg shadow-[#00e5ff]/20">
+            <span>Book CoE Workshop</span>
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lab Hero Visual Banner -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-20">
+      <div class="w-full h-80 rounded-3xl overflow-hidden border border-white/10 relative group">
+        <img src="images/ai_blueprint_insight.png" alt="AVAN AI Innovation Hub & CoE Lab" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
+          <span class="px-4 py-1.5 bg-[#00e5ff]/20 border border-[#00e5ff]/40 text-[#00e5ff] text-xs font-bold rounded-lg uppercase tracking-wider backdrop-blur-md">
+            Hyderabad CoE Campus
+          </span>
+          <span class="text-xs text-white/80 font-medium">Enterprise Sandbox & R&D Facility</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Core CoE Practice Pillars -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-24">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#00e5ff] block mb-2">Research Pillars</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Innovation Focus Areas</h2>
+        <p class="text-[#bac9cc] text-sm md:text-base">Our specialized research labs focus on high-impact enterprise technology vectors.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Pillar 1 -->
+        <div class="glass-card-lab rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/30 flex items-center justify-center text-[#00e5ff] mb-6">
+              <span class="material-symbols-outlined text-2xl">neurology</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Generative AI Sandbox</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              LLM fine-tuning, RAG architectures, and enterprise AI agents connected to SAP & ERP data stores.
+            </p>
+          </div>
+          <div class="text-xs font-semibold text-[#00e5ff]">Active Research Unit</div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="glass-card-lab rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#7000ff]/10 border border-[#7000ff]/30 flex items-center justify-center text-[#9d4dff] mb-6">
+              <span class="material-symbols-outlined text-2xl">dataset</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">SAP Clean Core Lab</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              Side-by-side extensibility, SAP BTP integrations, and automated ABAP modernization frameworks.
+            </p>
+          </div>
+          <div class="text-xs font-semibold text-[#9d4dff]">Active Research Unit</div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="glass-card-lab rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#ffd700]/10 border border-[#ffd700]/30 flex items-center justify-center text-[#ffd700] mb-6">
+              <span class="material-symbols-outlined text-2xl">cloud_sync</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Multi-Cloud Mesh</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              Zero-downtime database migration tooling, serverless compute optimization, and cloud FinOps models.
+            </p>
+          </div>
+          <div class="text-xs font-semibold text-[#ffd700]">Active Research Unit</div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="glass-card-lab rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/30 flex items-center justify-center text-[#00e5ff] mb-6">
+              <span class="material-symbols-outlined text-2xl">shield</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Autonomous SOC Lab</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              AI threat detection algorithms, automated incident remediation, and zero-trust policy engines.
+            </p>
+          </div>
+          <div class="text-xs font-semibold text-[#00e5ff]">Active Research Unit</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CoE Engagement Model -->
+    <section class="max-w-[1360px] mx-auto px-6 md:px-12 mb-20">
+      <div class="glass-card-lab rounded-3xl p-10 md:p-14 border border-white/10 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <span class="px-3 py-1 bg-[#00e5ff]/10 border border-[#00e5ff]/30 text-[#00e5ff] font-bold text-xs rounded-full uppercase tracking-wider inline-block">CoE Prototype Incubator</span>
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-white leading-tight">
+              From Concept to Proof-of-Concept in 14 Days.
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed">
+              We eliminate traditional R&D delays. Bring your toughest technical challenge to the AVAN CoE. Our engineering team builds a working 14-day prototype environment for executive evaluation.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="contact.html" class="px-6 py-3.5 bg-[#00e5ff] text-black font-bold rounded-xl text-sm hover:brightness-110 transition-all">
+                Request CoE Sandbox Access →
+              </a>
+              <a href="tech-stack.html" class="px-6 py-3.5 bg-white/5 border border-white/10 text-white font-semibold rounded-xl text-sm hover:bg-white/10 transition-all">
+                Explore Technology Ecosystem
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="w-full h-64 rounded-2xl overflow-hidden border border-white/10">
+              <img src="images/services_overview_hero.png" alt="14-Day CoE Incubator" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js?v=1.0.6"></script>
+</body>
+</html>

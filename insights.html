@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights & Research — AVAN IT Solutions</title>
+  <meta name="description" content="Enterprise thought leadership, whitepapers, technical briefings, and strategic research on SAP S/4HANA, AI architectures, cloud resilience, and cybersecurity." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System & Global Styles -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Grotesk:wght@400..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "on-primary": "#00363d",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00626e",
+            "secondary": "#d1bcff",
+            "on-secondary": "#3c0090",
+            "secondary-container": "#7000ff",
+            "on-secondary-container": "#ddcdff",
+            "tertiary": "#ffeac0",
+            "tertiary-container": "#fec931",
+            "surface": "#131315",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#1f1f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#bac9cc",
+            "outline": "#849396",
+            "outline-variant": "#3b494c",
+            "background": "#131315",
+            "on-background": "#e5e1e4",
+            "inverse-primary": "#006875",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "Sora", "sans-serif"],
+            "body": ["Sora", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: transparent !important; color: #e5e1e4; font-family: 'Sora', sans-serif; overflow-x: hidden; }
+    .glass-card {
+      background: rgba(15, 21, 34, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover {
+      background: rgba(15, 21, 34, 0.42);
+      border-color: rgba(0, 229, 255, 0.4);
+      transform: translateY(-4px);
+    }
+    .cyan-gradient-text {
+      background: linear-gradient(135deg, #c3f5ff 0%, #00e5ff 50%, #7000FF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    body > header, body > footer { display: none !important; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Shared Nav + Video BG injected by components.js -->
+  <script src="js/components.js"></script>
+
+  <main class="pt-36 md:pt-48 pb-32">
+    
+    <!-- Hero Section -->
+    <section class="max-w-[1280px] mx-auto px-6 md:px-12 text-center mb-24">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#00e5ff] text-[0.75rem] font-bold uppercase tracking-widest mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#00e5ff] animate-pulse"></span>
+        Enterprise Thought Leadership & Research
+      </div>
+      <h1 class="font-display text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+        Insights & Strategic <br>
+        <span class="cyan-gradient-text">Technology Briefings</span>
+      </h1>
+      <p class="text-[#bac9cc] text-lg max-w-2xl mx-auto leading-relaxed">
+        Deep-dives into modern cloud systems, SAP migration frameworks, cognitive AI architectures, and enterprise security governance.
+      </p>
+    </section>
+
+    <!-- Research & Whitepapers Grid -->
+    <section class="max-w-[1280px] mx-auto px-6 md:px-12 mb-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+        <!-- Featured Whitepaper -->
+        <div class="md:col-span-12 glass-card rounded-3xl p-10 flex flex-col md:flex-row gap-10 items-center">
+          <div class="flex-1">
+            <span class="px-3 py-1 bg-[#00e5ff]/10 border border-[#00e5ff]/30 text-[#00e5ff] font-bold text-xs rounded-full uppercase tracking-wider mb-4 inline-block">Flagship Research Paper</span>
+            <h2 class="font-display text-2xl md:text-4xl font-bold text-white mb-4 leading-tight">
+              The Enterprise AI Blueprint: Integrating Generative AI with SAP S/4HANA & Core ERP Systems
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed mb-6">
+              A comprehensive technical whitepaper on embedding real-time machine learning inference, automated document understanding, and predictive analytics directly into enterprise ERP workflows.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+              <a href="publications/ai-architectures.html" class="px-6 py-3 bg-[#00e5ff] text-[#001a1f] font-bold rounded-xl text-sm hover:brightness-110 transition-all">
+                Read Full Paper →
+              </a>
+              <span class="text-xs text-[#849396]">Published by AVAN Research • 12 Min Read</span>
+            </div>
+          </div>
+          <div class="w-full md:w-80 h-56 rounded-2xl border border-white/10 overflow-hidden shrink-0 relative group">
+            <img src="images/ai_blueprint_insight.png" alt="The Enterprise AI Blueprint: Integrating Generative AI with SAP S/4HANA & Core ERP" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b]/60 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+
+        <!-- Research Item 1: Zero Trust -->
+        <div class="md:col-span-4 glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/30 text-purple-400 font-bold text-[0.7rem] rounded-full uppercase tracking-wider mb-4 inline-block">Security Briefing</span>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Architecting Zero-Trust Governance in Hybrid Cloud Environments</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              How global enterprises enforce identity-first security, continuous authentication, and encrypted telemetry across AWS, Azure, and on-premise SAP deployments.
+            </p>
+          </div>
+          <a href="publications/zero-trust.html" class="text-[#9d4dff] font-bold text-xs hover:underline inline-flex items-center gap-1">
+            Read Security Briefing <span class="material-symbols-outlined text-xs">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Research Item 2: Edge Computing -->
+        <div class="md:col-span-4 glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-[0.7rem] rounded-full uppercase tracking-wider mb-4 inline-block">Architecture Guide</span>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Edge Compute & Real-Time Telemetry in Smart Manufacturing</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              Low-latency data processing models at the plant edge, enabling real-time equipment telemetry and predictive asset maintenance.
+            </p>
+          </div>
+          <a href="publications/edge-compute.html" class="text-[#ffd700] font-bold text-xs hover:underline inline-flex items-center gap-1">
+            Read Architecture Guide <span class="material-symbols-outlined text-xs">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Research Item 3: AI Ethics -->
+        <div class="md:col-span-4 glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-bold text-[0.7rem] rounded-full uppercase tracking-wider mb-4 inline-block">Executive Perspective</span>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Responsible AI & Governance Frameworks for Enterprise Operations</h3>
+            <p class="text-[#bac9cc] text-xs leading-relaxed mb-6">
+              Establishing explainability, data privacy compliance, and auditability in automated decision-making pipelines for modern growing enterprises.
+            </p>
+          </div>
+          <a href="publications/ai-ethics.html" class="text-[#00e5ff] font-bold text-xs hover:underline inline-flex items-center gap-1">
+            Read Executive Perspective <span class="material-symbols-outlined text-xs">arrow_forward</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Learning & Academy Teaser -->
+    <section class="max-w-[1280px] mx-auto px-6 md:px-12 text-center">
+      <div class="glass-card rounded-3xl p-12 border-white/10">
+        <span class="text-xs uppercase tracking-widest text-[#00e5ff] font-bold mb-3 block">Talent Acceleration</span>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-white mb-4">
+          AVAN Learning & Executive Bootcamps
+        </h2>
+        <p class="text-[#bac9cc] text-sm max-w-xl mx-auto mb-8">
+          Continuous upskilling in SAP S/4HANA, Cloud Engineering, Cybersecurity, and AI Architectures for enterprise teams and emerging talent.
+        </p>
+        <a href="learning.html" class="px-8 py-3.5 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2 text-sm">
+          Explore Learning Academies
+          <span class="material-symbols-outlined text-sm">school</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

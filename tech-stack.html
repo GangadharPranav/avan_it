@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Stack — AVAN IT Solutions</title>
+  <meta name="description" content="Explore the technology stack AVAN IT Solutions uses and delivers to enterprise clients — Cloud, AI, DevOps, Security, and more." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300F5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "on-primary": "#00363d",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00626e",
+            "secondary": "#d1bcff",
+            "on-secondary": "#3c0090",
+            "secondary-container": "#7000ff",
+            "on-secondary-container": "#ddcdff",
+            "tertiary": "#ffeac0",
+            "tertiary-container": "#fec931",
+            "surface": "#131315",
+            "surface-dim": "#131315",
+            "surface-bright": "#39393b",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#1f1f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#bac9cc",
+            "outline": "#849396",
+            "outline-variant": "#3b494c",
+            "background": "#131315",
+            "on-background": "#e5e1e4",
+            "inverse-surface": "#e5e1e4",
+            "inverse-on-surface": "#303032",
+            "inverse-primary": "#006875",
+            "primary-fixed": "#9cf0ff",
+            "primary-fixed-dim": "#00daf3",
+            "surface-tint": "#00daf3",
+            "surface-variant": "#353437",
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          spacing: {
+            "desktop_margin": "48px",
+            "desktop_columns": "12",
+            "mobile_margin": "20px",
+            "mobile_columns": "4",
+            "max_container_width": "1280px",
+            "mobile_gutter": "16px",
+            "base_unit": "8px",
+            "desktop_gutter": "24px"
+          },
+          fontFamily: { "display-lg": ["Sora"], "headline-lg": ["Sora"], "headline-md": ["Sora"], "title-lg": ["Sora"], "body-lg": ["Sora"], "body-md": ["Sora"], "label-md": ["Sora"], "label-sm": ["Sora"] },
+          fontSize: {
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .tech-category { margin-bottom: 64px; }
+    .tech-category-title {
+      display: flex; align-items: center; gap: 16px;
+      font-family: 'Sora', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-glass);
+    }
+    .tech-icons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .tech-icon-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 24px 16px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      cursor: default;
+      text-align: center;
+    }
+    .tech-icon-card:hover {
+      border-color: rgba(0,245,255,0.4);
+      background: rgba(0,245,255,0.04);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .tech-icon-card .icon { font-size: 2.25rem; }
+    .tech-icon-card .name { font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); }
+    .tech-icon-card .category-badge { font-size: 0.75rem; color: var(--text-muted); }
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .cert-card {
+      padding: 28px 24px;
+      text-align: center;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      transition: var(--transition);
+    }
+    .cert-card:hover { border-color: var(--gold); box-shadow: 0 0 30px rgba(255,215,0,0.1); transform: translateY(-4px); }
+    .expertise-bar { margin-bottom: 20px; }
+    .expertise-label { display: flex; justify-content: space-between; font-size: 0.875rem; margin-bottom: 8px; }
+    .expertise-label span:last-child { color: var(--cyan); font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-primary-container selection:text-on-primary-container">
+  <script src="js/components.js"></script>
+  <main class="pt-32 md:pt-48 pb-32 px-4 md:px-container-padding max-w-[1280px] mx-auto relative z-10">
+    <!-- Hero Section -->
+    <section class="mb-32 text-center max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-primary-container font-label-sm text-[10px] uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-10 backdrop-blur-xl">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+        </span>
+        Under the Hood
+      </div>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 max-w-4xl mx-auto leading-none text-white font-bold">
+        The Tech That Makes <span class="text-primary-container">Magic Happen</span>
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+        We don't pick technology for the sake of it. Every tool in our stack is chosen for speed, reliability, and AI-readiness. We move fast and build smart.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center" id="tech-stats-pills">
+        <span class="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Modern Tech Stack</span>
+        <span class="px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold uppercase tracking-wider">Full-Stack Coverage</span>
+        <span class="px-4 py-2 rounded-full bg-tertiary/10 border border-tertiary/20 text-tertiary-container text-xs font-bold uppercase tracking-wider">8 Practice Areas</span>
+        <span class="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary-container text-xs font-bold uppercase tracking-wider">AI-First Approach</span>
+      </div>
+      <div class="mt-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-80 relative group max-w-4xl mx-auto">
+        <img src="images/tech_stack_hero.png" alt="AVAN IT Technology Alliances & Stack" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <!-- Cloud Platforms & ERP Hosting -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            ☁️ Cloud Platforms & ERP Hosting <span class="badge badge-cyan" style="font-size:0.7rem">Expert Level</span>
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">☁️</div><div class="name">Amazon Web Services</div><div class="category-badge">Cloud Native</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">🔵</div><div class="name">Microsoft Azure</div><div class="category-badge">Enterprise Cloud</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">🌐</div><div class="name">Google Cloud</div><div class="category-badge">Cloud Infra</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">🏢</div><div class="name">SAP HEC</div><div class="category-badge">HANA Enterprise Cloud</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">🏔️</div><div class="name">Cloudflare</div><div class="category-badge">Edge & Security</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">🏗️</div><div class="name">Terraform</div><div class="category-badge">IaC</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">🎡</div><div class="name">Kubernetes</div><div class="category-badge">Orchestration</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">🐳</div><div class="name">Docker</div><div class="category-badge">Containers</div></div>
+          </div>
+        </div>
+
+        <!-- SAP Enterprise Suite -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            📊 SAP Enterprise Suite <span class="badge badge-violet" style="font-size:0.7rem">Centre of Excellence</span>
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">💻</div><div class="name">SAP S/4HANA</div><div class="category-badge">ERP Next-Gen</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">✨</div><div class="name">SAP Fiori</div><div class="category-badge">User Experience</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">⚙️</div><div class="name">SAP ECC & ABAP</div><div class="category-badge">Legacy Modules & Code</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">📈</div><div class="name">SAP Business Suite</div><div class="category-badge">Process Suite</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">💼</div><div class="name">SAP SuccessFactors</div><div class="category-badge">HR & Payroll</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">💰</div><div class="name">SAP Ariba</div><div class="category-badge">Procurement</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">🌍</div><div class="name">SAP Cloud SDK</div><div class="category-badge">Extension Suite</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">📐</div><div class="name">SAP Analytics Cloud</div><div class="category-badge">BI & Reporting</div></div>
+          </div>
+        </div>
+
+        <!-- ERP Platforms & Custom ERPs -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            ⚙️ ERP Platforms & Custom ERPs <span class="badge badge-emerald" style="font-size:0.7rem">Battle-Tested</span>
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">🟢</div><div class="name">Odoo ERP</div><div class="category-badge">Open Source ERP</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">🏢</div><div class="name">Microsoft Dynamics</div><div class="category-badge">ERP & CRM</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">☕</div><div class="name">Spring Boot</div><div class="category-badge">Custom Backend</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">🐍</div><div class="name">Python & Django</div><div class="category-badge">Custom ERP Base</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">🐹</div><div class="name">Go (Golang)</div><div class="category-badge">Microservices</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">☁️</div><div class="name">Oracle NetSuite</div><div class="category-badge">Cloud ERP</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">⚡</div><div class="name">FastAPI</div><div class="category-badge">Custom REST API</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">🌐</div><div class="name">React / Vue</div><div class="category-badge">ERP Dashboards</div></div>
+          </div>
+        </div>
+
+        <!-- ERP Integration & Middleware -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            💻 ERP Integration & Middleware <span class="badge badge-magenta" style="font-size:0.7rem">System Sync</span>
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">🔄</div><div class="name">MuleSoft Anypoint</div><div class="category-badge">Enterprise ESB</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">📦</div><div class="name">SAP PO/PI</div><div class="category-badge">SAP Integration</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">🎯</div><div class="name">Dell Boomi</div><div class="category-badge">Cloud Integration</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">🟦</div><div class="name">Apigee</div><div class="category-badge">API Management</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">🐦</div><div class="name">Apache Camel</div><div class="category-badge">Integration Engine</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">📱</div><div class="name">GraphQL Gateways</div><div class="category-badge">API Hub</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">🍎</div><div class="name">Kafka Connect</div><div class="category-badge">Event Streaming</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">🤖</div><div class="name">SAP Cloud ALM</div><div class="category-badge">Lifecycle Management</div></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            🗃️ Databases & SAP HANA
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">🏰</div><div class="name">SAP HANA Database</div><div class="category-badge">In-Memory DB</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">🐘</div><div class="name">PostgreSQL</div><div class="category-badge">Primary DB</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">🔴</div><div class="name">Redis</div><div class="category-badge">Cache & Queue</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">🌊</div><div class="name">Apache Kafka</div><div class="category-badge">Event Streaming</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">🔍</div><div class="name">Elasticsearch</div><div class="category-badge">Search</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">❄️</div><div class="name">Snowflake</div><div class="category-badge">Data Warehouse</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">📊</div><div class="name">Oracle Database</div><div class="category-badge">Enterprise Relational</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">🍃</div><div class="name">MongoDB</div><div class="category-badge">NoSQL</div></div>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="tech-category">
+          <div class="tech-category-title reveal">
+            🔄 DevOps & SRE for Enterprise
+          </div>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card reveal"><div class="icon">🦅</div><div class="name">ArgoCD</div><div class="category-badge">GitOps</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.05s"><div class="icon">🔮</div><div class="name">Prometheus</div><div class="category-badge">Monitoring</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.1s"><div class="icon">📈</div><div class="name">Grafana</div><div class="category-badge">Dashboards</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.15s"><div class="icon">🐙</div><div class="name">GitHub Actions</div><div class="category-badge">CI/CD</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.2s"><div class="icon">⚡</div><div class="name">Jenkins</div><div class="category-badge">Automation</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.25s"><div class="icon">🐝</div><div class="name">Datadog</div><div class="category-badge">APM</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.3s"><div class="icon">🔬</div><div class="name">Jaeger</div><div class="category-badge">Tracing</div></div>
+            <div class="tech-icon-card reveal" style="transition-delay:0.35s"><div class="icon">🌊</div><div class="name">Helm</div><div class="category-badge">K8s Packaging</div></div>
+          </div>
+        </div>
+
+        <!-- Expertise Levels -->
+        <div class="reveal" style="margin-bottom:64px">
+          <div class="section-label" style="margin-bottom:24px">Practice Depth</div>
+          <h2 class="section-title" style="font-size:clamp(1.5rem,2.5vw,2.25rem);margin-bottom:40px">
+            We Go <span class="gradient-text">Deep, Not Wide</span>
+          </h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px 60px">
+            <div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>Cloud Architecture</span><span>98%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="98%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>Full-Stack Development</span><span>95%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>AI & Machine Learning</span><span>92%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="92%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>Cybersecurity</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+            </div>
+            <div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>DevOps & SRE</span><span>96%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="96%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>Mobile Development</span><span>88%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="88%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>ERP Implementations</span><span>85%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+              </div>
+              <div class="expertise-bar">
+                <div class="expertise-label"><span>Data Engineering</span><span>91%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="91%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div>
+          <div style="text-align:center;margin-bottom:48px">
+            <div class="section-label reveal" style="justify-content:center">Expertise</div>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">
+              Core <span class="gradient-text">Competencies</span>
+            </h2>
+          </div>
+          <div class="certifications-grid">
+            <div class="cert-card reveal">
+              <div style="font-size:2.5rem;margin-bottom:12px">☁️</div>
+              <h4 style="font-weight:600;margin-bottom:4px">AWS Solutions Architect</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">Professional & Associate — 4 certified engineers</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.05s">
+              <div style="font-size:2.5rem;margin-bottom:12px">🔵</div>
+              <h4 style="font-weight:600;margin-bottom:4px">Azure Cloud Architecture</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">Cloud Engineering — Azure Specialists</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.1s">
+              <div style="font-size:2.5rem;margin-bottom:12px">🔐</div>
+              <h4 style="font-weight:600;margin-bottom:4px">CISSP / CEH / OSCP</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">Security certifications — 2 engineers</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.15s">
+              <div style="font-size:2.5rem;margin-bottom:12px">☸️</div>
+              <h4 style="font-weight:600;margin-bottom:4px">CKA / CKAD / CKS</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">Kubernetes certified professionals — 3 engineers</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.2s">
+              <div style="font-size:2.5rem;margin-bottom:12px">📊</div>
+              <h4 style="font-weight:600;margin-bottom:4px">SAP S/4HANA Certified</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">ERP implementation specialists — 2 consultants</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.25s">
+              <div style="font-size:2.5rem;margin-bottom:12px">🌐</div>
+              <h4 style="font-weight:600;margin-bottom:4px">GCP Professional</h4>
+              <p style="color:var(--text-muted);font-size:0.8125rem">Cloud Data, ML, & Architect certified — 2 engineers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="border-top:1px solid var(--border-glass);text-align:center;background:rgba(0,245,255,0.02)">
+      <div class="section-inner">
+        <h2 class="section-title reveal"><span class="gradient-text">Need a Specific Technology?</span></h2>
+        <p style="color:var(--text-secondary);max-width:560px;margin:0 auto 32px;line-height:1.7;font-size:1.125rem" class="reveal" style="transition-delay:0.1s">
+          Don't see your preferred stack? No problem. Our engineers are quick learners who adapt to new technologies rapidly.
+        </p>
+        <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;transition-delay:0.2s">
+          <a href="contact.html" class="btn btn-primary" id="tech-consult-btn">💬 Discuss Your Stack</a>
+          <a href="services.html" class="btn btn-outline" id="tech-services-btn">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Ethics & Governance — AVAN Publications</title>
+  <meta name="description" content="Framework for safely deploying custom LLMs and automated agents inside regulatory-compliant environments." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "on-primary": "#00363d",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00626e",
+            "secondary": "#d1bcff",
+            "on-secondary": "#3c0090",
+            "secondary-container": "#7000ff",
+            "on-secondary-container": "#ddcdff",
+            "tertiary": "#ffeac0",
+            "tertiary-container": "#fec931",
+            "surface": "#131315",
+            "surface-dim": "#131315",
+            "surface-bright": "#39393b",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#1f1f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#bac9cc",
+            "outline": "#849396",
+            "outline-variant": "#3b494c",
+            "background": "#131315",
+            "on-background": "#e5e1e4",
+            "inverse-surface": "#e5e1e4",
+            "inverse-on-surface": "#303032",
+            "inverse-primary": "#006875",
+            "primary-fixed": "#9cf0ff",
+            "primary-fixed-dim": "#00daf3",
+            "surface-tint": "#00daf3",
+            "surface-variant": "#353437",
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          spacing: {
+            "desktop_margin": "48px",
+            "desktop_columns": "12",
+            "mobile_margin": "20px",
+            "mobile_columns": "4",
+            "max_container_width": "1280px",
+            "mobile_gutter": "16px",
+            "base_unit": "8px",
+            "desktop_gutter": "24px"
+          },
+          fontFamily: { "display-lg": ["Sora"], "headline-lg": ["Sora"], "headline-md": ["Sora"], "title-lg": ["Sora"], "body-lg": ["Sora"], "body-md": ["Sora"], "label-md": ["Sora"], "label-sm": ["Sora"] },
+          fontSize: {
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["28px", { lineHeight: "36px", fontWeight: "600" }],
+            "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: transparent !important; color: #e5e1e4; font-family: 'Sora', sans-serif; overflow-x: hidden; }
+    .glass-panel {
+      background: rgba(19, 19, 21, 0.28) !important;
+      backdrop-filter: blur(16px) saturate(140%) !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+    body > header, body > footer { display: none !important; }
+  </style>
+</head>
+<body class="bg-transparent flex flex-col min-h-screen">
+
+  <script src="../js/components.js"></script>
+
+  <main class="flex-grow pt-32 pb-24 px-mobile_margin md:px-desktop_margin max-w-3xl mx-auto w-full">
+    <a href="../clients.html" class="inline-flex items-center gap-2 text-primary font-label-md text-label-md mb-8 group">
+      <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+      Back to Publications
+    </a>
+
+    <article class="space-y-8">
+      <div class="space-y-4">
+        <span class="px-3 py-1 rounded bg-primary-container/20 text-primary border border-primary-container/30 font-label-sm text-label-sm uppercase">Governance Framework</span>
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white">AI Ethics & Governance</h1>
+        <p class="text-on-surface-variant font-body-lg text-body-lg">Our updated framework for safely deploying custom LLMs and automated agents.</p>
+      </div>
+
+      <div class="border-t border-outline-variant/30 pt-8 space-y-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        <h2 class="font-title-lg text-title-lg text-white">1. Introduction</h2>
+        <p>
+          Deploying autonomous agent workflows within production systems demands clear safety guardrails. This framework outlines AVAN's security guidelines for LLM deployments.
+        </p>
+
+        <h2 class="font-title-lg text-title-lg text-white">2. Prompt Filtering & Shielding</h2>
+        <p>
+          We employ double-layered shielding logic at both ingress and egress ports. This filters out malicious payloads and mitigates prompt injection vulnerabilities prior to database queries.
+        </p>
+
+        <h2 class="font-title-lg text-title-lg text-white">3. Auditability & Logging</h2>
+        <p>
+          All autonomous agent decisions are recorded with execution tags to ensure full diagnostic tracking and system security.
+        </p>
+      </div>
+    </article>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI, Enterprise RAG, Smart Glasses & Custom UI Chatbots — AVAN IT Solutions</title>
+  <meta name="description" content="Deep-dive enterprise AI use cases: AI-powered smart glasses for warehouse management, custom UI chatbots, Enterprise RAG systems, and SAP S/4HANA AI integrations." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    body { background-color:transparent !important; color:#e5e1e4; font-family:'Sora',sans-serif; overflow-x:hidden; }
+    .glass-card-ai {
+      background: rgba(16, 17, 20, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-ai:hover {
+      background: rgba(16, 17, 20, 0.42);
+      border-color: rgba(0, 229, 255, 0.45);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px -10px rgba(0, 229, 255, 0.25);
+    }
+    .step-pill {
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      color: #00e5ff;
+    }
+    body > header, body > footer { display:none !important; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-[#00e5ff]/20 selection:text-[#00e5ff]">
+  <!-- Shared Nav + Video BG -->
+  <script src="js/components.js?v=1.0.6"></script>
+
+  <main class="relative z-10 pt-28 pb-32 max-w-[1360px] mx-auto px-6 md:px-12">
+    <!-- Breadcrumb & Hero Header -->
+    <section class="mb-20">
+      <nav class="flex items-center gap-2 text-xs text-[#849396] uppercase tracking-wider mb-6">
+        <a href="index.html" class="hover:text-[#00e5ff] transition-colors">Home</a>
+        <span>/</span>
+        <a href="services.html" class="hover:text-[#00e5ff] transition-colors">Services</a>
+        <span>/</span>
+        <span class="text-[#00e5ff] font-semibold">Enterprise AI Use Cases &amp; Practice</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00e5ff]/30 bg-[#00e5ff]/10 text-[#00e5ff] font-bold text-xs uppercase tracking-widest mb-6">
+            <span class="material-symbols-outlined text-sm">neurology</span>
+            Production AI Blueprint &amp; Use Cases
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+            AI-Powered Vision, <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] via-[#9d4dff] to-[#ffd700]">RAG Systems &amp; Smart Glasses.</span>
+          </h1>
+          <p class="text-[#bac9cc] text-base sm:text-lg leading-relaxed mb-8">
+            Explore deep-dive technical architectures for AI-powered smart glasses in warehouse management, enterprise RAG knowledge engines, and custom UI chatbots connected directly to SAP S/4HANA.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#smart-glasses-usecase" class="px-8 py-4 bg-gradient-to-r from-[#00e5ff] to-[#7000ff] text-black font-bold rounded-xl hover:brightness-110 transition-all shadow-lg shadow-[#00e5ff]/20">
+              Warehouse Vision Picking ↓
+            </a>
+            <a href="#rag-system-usecase" class="px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all">
+              Enterprise RAG Engine ↓
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="w-full h-96 rounded-3xl overflow-hidden border border-[#00e5ff]/30 relative group shadow-2xl">
+            <img src="images/ai_cloud_transformation.png" alt="AI & RAG Enterprise Architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation Bar for AI Use Cases -->
+    <section class="mb-20 glass-card-ai rounded-2xl p-6 border border-white/10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#00e5ff]">Jump to Production Use Case:</span>
+        <div class="flex flex-wrap gap-3">
+          <a href="#smart-glasses-usecase" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-[#00e5ff]/20 text-xs font-bold text-white border border-white/10 transition-all">🥽 Smart Glasses Vision</a>
+          <a href="#rag-system-usecase" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-[#9d4dff]/20 text-xs font-bold text-white border border-white/10 transition-all">🧠 Enterprise RAG Systems</a>
+          <a href="#chatbots-usecase" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-[#ffd700]/20 text-xs font-bold text-white border border-white/10 transition-all">💬 Custom UI Chatbots</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- USE CASE 1: AI SMART GLASSES FOR WAREHOUSE MANAGEMENT            -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="smart-glasses-usecase" class="mb-28 scroll-mt-28">
+      <div class="glass-card-ai rounded-3xl p-8 md:p-14 border border-[#00e5ff]/30">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-full bg-[#00e5ff]/10 border border-[#00e5ff]/30 text-[#00e5ff] font-bold text-xs uppercase tracking-widest">Flagship Use Case #1</span>
+          <span class="text-xs text-[#849396] font-semibold">SAP EWM &amp; AR Vision Integration</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-12">
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight">
+              AI-Powered Smart Glasses for <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] to-[#9d4dff]">Warehouse Management.</span>
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed">
+              Hands-free Augmented Reality (AR) vision picking system for warehouse operators. Integrates computer vision optical character recognition (OCR), 2D/3D barcode scanning, and heads-up route navigation synchronized in real time with SAP Extended Warehouse Management (SAP EWM).
+            </p>
+            <div class="grid grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
+                <div class="text-2xl font-bold text-[#00e5ff]">98%</div>
+                <div class="text-[11px] text-[#849396] uppercase tracking-wider font-semibold">Error Reduction</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
+                <div class="text-2xl font-bold text-[#9d4dff]">42%</div>
+                <div class="text-[11px] text-[#849396] uppercase tracking-wider font-semibold">Picking Speed</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
+                <div class="text-2xl font-bold text-[#ffd700]">0.2s</div>
+                <div class="text-[11px] text-[#849396] uppercase tracking-wider font-semibold">SAP EWM Sync</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="w-full h-80 rounded-2xl overflow-hidden border border-white/10 relative">
+              <img src="images/contact_hq_visual.png" alt="Smart Glasses Vision Picking AR Layout" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Process Architecture Flow -->
+        <div class="pt-8 border-t border-white/10">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-8">4-Step Vision Picking Technical Flow</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <span class="px-2.5 py-1 rounded-full step-pill text-xs font-bold">Step 1: AR Display</span>
+              <h4 class="font-bold text-white text-sm">Task Dispatch &amp; HUD</h4>
+              <p class="text-xs text-[#bac9cc]">SAP EWM dispatches picking orders directly to operator's smart glass heads-up display with aisle navigation arrows.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <span class="px-2.5 py-1 rounded-full step-pill text-xs font-bold">Step 2: Optical Scan</span>
+              <h4 class="font-bold text-white text-sm">Computer Vision OCR</h4>
+              <p class="text-xs text-[#bac9cc]">On-device camera scans bin locations and product barcodes without requiring handheld physical scanners.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <span class="px-2.5 py-1 rounded-full step-pill text-xs font-bold">Step 3: AI Validation</span>
+              <h4 class="font-bold text-white text-sm">Quantity &amp; SKU Check</h4>
+              <p class="text-xs text-[#bac9cc]">AI model verifies object dimensions and SKU batch number, alerting operator visually if an incorrect item is grabbed.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <span class="px-2.5 py-1 rounded-full step-pill text-xs font-bold">Step 4: EWM Auto-Post</span>
+              <h4 class="font-bold text-white text-sm">Instant SAP Post</h4>
+              <p class="text-xs text-[#bac9cc]">Posts Goods Issue (`MIGO`) and updates SAP inventory stock levels instantly via encrypted WebSocket gateway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- USE CASE 2: ENTERPRISE RAG KNOWLEDGE SYSTEM                       -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="rag-system-usecase" class="mb-28 scroll-mt-28">
+      <div class="glass-card-ai rounded-3xl p-8 md:p-14 border border-[#9d4dff]/30">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-full bg-[#9d4dff]/10 border border-[#9d4dff]/30 text-[#9d4dff] font-bold text-xs uppercase tracking-widest">Flagship Use Case #2</span>
+          <span class="text-xs text-[#849396] font-semibold">Hybrid Vector (Milvus) + Knowledge Graph (Neo4j)</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-12">
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight">
+              Enterprise RAG Knowledge System &amp; <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#9d4dff] to-[#ffd700]">Semantic Graph Indexing.</span>
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed">
+              Ingest millions of un-structured enterprise documents (PDF manuals, SOPs, engineering schematics, SAP configuration guides, legal contracts) into a high-performance vector search engine with 99.4% citation accuracy and zero hallucination.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-semibold text-[#00e5ff]">Milvus Vector DB</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-semibold text-[#9d4dff]">Neo4j Graph RAG</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-semibold text-[#ffd700]">99.4% Citation Accuracy</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-semibold text-white">Role-Based Security (RBAC)</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="w-full h-80 rounded-2xl overflow-hidden border border-white/10 relative">
+              <img src="images/ai_blueprint_insight.png" alt="RAG Architecture Data Ingestion Flow" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RAG Architecture Pipeline Steps -->
+        <div class="pt-8 border-t border-white/10">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-[#9d4dff] mb-8">Enterprise RAG Data Pipeline</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <h4 class="font-bold text-white text-sm">1. Document Chunking &amp; Embeddings</h4>
+              <p class="text-xs text-[#bac9cc]">Ingests 10,000+ files per hour using semantic chunking and custom domain embedding models trained on industrial terminology.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <h4 class="font-bold text-white text-sm">2. Hybrid Dense + Sparse Retrieval</h4>
+              <p class="text-xs text-[#bac9cc]">Combines BM25 keyword matching with dense vector distance (COSINE/IP) for pinpoint retrieval accuracy.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+              <h4 class="font-bold text-white text-sm">3. Grounded Generation &amp; Audit Trail</h4>
+              <p class="text-xs text-[#bac9cc]">Generates responses strictly backed by page-level citations, logging every query for SOC2 enterprise compliance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- USE CASE 3: CUSTOM UI CHATBOTS & AI AGENTS                        -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="chatbots-usecase" class="mb-24 scroll-mt-28">
+      <div class="glass-card-ai rounded-3xl p-8 md:p-14 border border-[#ffd700]/30">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-full bg-[#ffd700]/10 border border-[#ffd700]/30 text-[#ffd700] font-bold text-xs uppercase tracking-widest">Flagship Use Case #3</span>
+          <span class="text-xs text-[#849396] font-semibold">Embedded Web/Mobile Widgets with ERP Memory</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight">
+              Custom UI Conversational Chatbots &amp; <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ffd700] to-[#00e5ff]">Autonomous AI Agents.</span>
+            </h2>
+            <p class="text-[#bac9cc] text-sm md:text-base leading-relaxed">
+              Embed custom conversational AI widgets directly into customer web portals, internal employee portals, and mobile apps. Features contextual session memory, direct SAP database queries, file attachment processing, and human handoff protocols.
+            </p>
+            <a href="contact.html" class="inline-block px-8 py-4 bg-gradient-to-r from-[#ffd700] to-[#00e5ff] text-black font-bold rounded-xl hover:brightness-110 transition-all">
+              Build Your Custom UI Chatbot →
+            </a>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="p-6 rounded-2xl bg-[#131315] border border-white/10 space-y-4 shadow-2xl">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                  <span class="text-xs font-bold text-white">AVAN Enterprise AI Assistant</span>
+                </div>
+                <span class="text-[10px] text-[#849396] font-mono">SAP S/4HANA Connected</span>
+              </div>
+              <div class="space-y-3 text-xs">
+                <div class="p-3 rounded-xl bg-white/5 text-[#bac9cc] max-w-[85%]">
+                  👋 Hello! I can check your SAP Purchase Order status or generate a supplier registration link.
+                </div>
+                <div class="p-3 rounded-xl bg-[#00e5ff]/20 text-white ml-auto max-w-[85%] font-semibold">
+                  Check status for PO #4500021984
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 text-[#bac9cc] max-w-[85%]">
+                  ✅ PO #4500021984 has been approved by Finance. 500 units shipped via DHL Express.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center glass-card-ai rounded-3xl p-12 border border-[#00e5ff]/30">
+      <h2 class="font-display text-3xl font-bold text-white mb-4">Want to Deploy These Use Cases in Your Organization?</h2>
+      <p class="text-[#bac9cc] text-sm max-w-2xl mx-auto mb-8">
+        Schedule a 1-on-1 technical session with our AI &amp; SAP Architects in Hyderabad, India to map out your implementation timeline and proof-of-concept (PoC).
+      </p>
+      <a href="contact.html" class="px-8 py-4 bg-gradient-to-r from-[#00e5ff] to-[#7000ff] text-black font-bold rounded-xl hover:brightness-110 transition-all inline-block">
+        Request Technical Discovery →
+      </a>
+    </section>
+  </main>
+
+  <script src="js/main.js?v=1.0.6"></script>
+</body>
+</html>

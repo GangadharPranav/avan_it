@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — AVAN IT Solutions</title>
+  <meta name="description" content="A young, ambitious IT solutions company building intelligent enterprise platforms with AI-first engineering and consulting-led strategy. Founded 2025, India." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "on-primary": "#00363d",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00626e",
+            "secondary": "#d1bcff",
+            "on-secondary": "#3c0090",
+            "secondary-container": "#7000ff",
+            "on-secondary-container": "#ddcdff",
+            "tertiary": "#ffeac0",
+            "tertiary-container": "#fec931",
+            "surface": "#131315",
+            "surface-dim": "#131315",
+            "surface-bright": "#39393b",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#1f1f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#bac9cc",
+            "outline": "#849396",
+            "outline-variant": "#3b494c",
+            "background": "#131315",
+            "on-background": "#e5e1e4",
+            "inverse-surface": "#e5e1e4",
+            "inverse-on-surface": "#303032",
+            "inverse-primary": "#006875",
+            "primary-fixed": "#9cf0ff",
+            "primary-fixed-dim": "#00daf3",
+            "surface-tint": "#00daf3",
+            "surface-variant": "#353437",
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          spacing: {
+            "desktop_margin": "48px",
+            "desktop_columns": "12",
+            "mobile_margin": "20px",
+            "mobile_columns": "4",
+            "max_container_width": "1280px",
+            "mobile_gutter": "16px",
+            "base_unit": "8px",
+            "desktop_gutter": "24px"
+          },
+          fontFamily: { "display-lg": ["Sora"], "headline-lg": ["Sora"], "headline-md": ["Sora"], "title-lg": ["Sora"], "body-lg": ["Sora"], "body-md": ["Sora"], "label-md": ["Sora"], "label-sm": ["Sora"] },
+          fontSize: {
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          }
+        }
+      }
+    }
+  </script>  <style>
+    body { background-color: transparent !important; color: #e5e1e4; font-family: 'Sora', sans-serif; overflow-x: hidden; }
+    .glass-card {
+      background: rgba(19, 19, 21, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    body > header, body > footer { display: none !important; }
+    
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-on-scroll.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .stagger-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: inherit;
+    }
+    .reveal-on-scroll.active .stagger-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .profile-card:hover img {
+        filter: grayscale(0) brightness(1.1);
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+    }
+    .profile-card:hover .profile-glow {
+        opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-primary-container selection:text-on-primary-container font-body-md overflow-x-hidden">
+
+  <!-- Shared Nav + Video BG -->
+  <script src="js/components.js"></script>
+
+  <main>
+
+    <!-- ══ HERO — Portrait Vignette composition (About page) ══ -->
+    <section class="page-hero hero-about hero-tall">
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+      <div class="hero-flare"></div>
+
+      <div class="hero-content" style="display:grid; grid-template-columns:1fr; gap:32px; align-items:end;">
+
+        <!-- Breadcrumb -->
+        <div class="page-indicator" style="margin-bottom:0;">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span class="current">About Us</span>
+        </div>
+
+        <!-- Two-column: text left (Golden Ratio 62%), card right (38%) -->
+        <div style="display:grid; grid-template-columns:1.618fr 1fr; gap:48px; align-items:end;" class="about-hero-grid">
+
+          <div class="appear">
+            <div class="hero-label">Founded 2025 · Hyderabad, India</div>
+            <h1 class="hero-title hero-title-xl">
+              We Don't Just
+              <span class="grad-cyan" style="display:block;">Build Software.</span>
+              <span style="font-weight:300; font-size:0.65em; opacity:0.75; font-family:'Sora',sans-serif; letter-spacing:-0.01em;">We architect what comes next.</span>
+            </h1>
+            <p class="hero-subtitle">
+              AVAN IT Solutions was founded with a clear purpose: to make enterprise-grade technology accessible, intelligent, and fast. We combine AI-first engineering with consulting-led strategy — no bureaucracy, no legacy thinking, just outcomes.
+            </p>
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+              <a href="services.html" class="avan-btn avan-btn-primary">
+                Our Story <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+              </a>
+              <a href="tech-stack.html" class="avan-btn avan-btn-ghost">The Tech Stack</a>
+            </div>
+          </div>
+
+          <!-- Right: Dedicated Hero Visual Card -->
+          <div style="display:flex; flex-direction:column; gap:16px;" class="appear appear-delay-2 about-hero-stats">
+            <div class="glass" style="overflow:hidden; border-radius:24px; padding:0; height:260px; border:1px solid rgba(0,229,255,0.2);">
+              <img src="images/about_us_hero.png" alt="AVAN IT Corporate Vision Visual" style="width:100%; height:100%; object-fit:cover;" />
+            </div>
+            <div class="float-widget" style="animation-delay:0s;">
+              <div class="stat-block">
+                <div class="num">AI<span style="font-size:1.8rem;">+</span></div>
+                <div class="lbl">AI-First Approach</div>
+              </div>
+            </div>
+            <div class="float-widget" style="animation-delay:1.8s;">
+              <div class="stat-block">
+                <div class="num">2025</div>
+                <div class="lbl">Year of Inception</div>
+              </div>
+            </div>
+            <div class="float-widget" style="animation-delay:3.2s;">
+              <div class="stat-block">
+                <div class="num">Hyderabad</div>
+                <div class="lbl">Headquartered</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      @media (max-width:900px) {
+        .about-hero-grid { grid-template-columns:1fr !important; }
+        .about-hero-stats { display:none !important; }
+      }
+    </style>
+
+    <!-- Spacer so content after hero has breathing room -->
+
+    <!-- Mission & Values Bento Grid -->
+    <section class="px-mobile_margin md:px-desktop_margin max-w-max_container_width mx-auto mb-32 reveal-on-scroll">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Large Vision Card -->
+        <div class="md:col-span-2 md:row-span-2 glass-card p-12 flex flex-col justify-between group stagger-item" style="transition-delay: 100ms">
+          <div>
+            <span class="material-symbols-outlined text-primary-container text-4xl mb-6 group-hover:scale-110 transition-transform">visibility</span>
+            <h3 class="font-headline-lg text-headline-lg mb-6">Our Vision</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              To become a trusted technology partner for businesses navigating complexity — delivering intelligent, scalable platforms that simplify operations, accelerate growth, and set the foundation for what’s next.
+            </p>
+          </div>
+        </div>
+        <!-- Mission Card -->
+        <div class="md:col-span-2 glass-card p-8 stagger-item" style="transition-delay: 200ms">
+          <div class="flex items-start gap-6">
+            <div class="p-4 bg-surface-container-highest/40 rounded-xl">
+              <span class="material-symbols-outlined text-primary animate-pulse">rocket_launch</span>
+            </div>
+            <div>
+              <h4 class="font-title-lg text-title-lg mb-2">Our Mission</h4>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">To deliver intelligent IT solutions at startup speed — from ERP and SAP implementations to cloud infrastructure, AI automation, and full-stack development. Every engagement, built for impact.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Integrity Card -->
+        <div class="glass-card p-8 flex flex-col items-center text-center stagger-item" style="transition-delay: 300ms">
+          <span class="material-symbols-outlined text-primary-container text-3xl mb-4" style="font-variation-settings: 'FILL' 1;">shield</span>
+          <h5 class="font-label-md text-label-md text-on-surface uppercase mb-2">Integrity</h5>
+          <p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Honest communication, transparent processes, and accountability in every client engagement.</p>
+        </div>
+        <!-- Precision Card -->
+        <div class="glass-card p-8 flex flex-col items-center text-center stagger-item" style="transition-delay: 400ms">
+          <span class="material-symbols-outlined text-primary-container text-3xl mb-4" style="font-variation-settings: 'FILL' 1;">recenter</span>
+          <h5 class="font-label-md text-label-md text-on-surface uppercase mb-2">Precision</h5>
+          <p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Clean architecture, tested code, and solutions engineered to scale from day one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Leadership Section -->
+    <section class="py-32 border-y border-outline-variant/10 relative overflow-hidden reveal-on-scroll">
+      <div class="max-w-max_container_width mx-auto px-mobile_margin md:px-desktop_margin relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div class="max-w-2xl stagger-item" style="transition-delay: 100ms">
+            <span class="font-label-sm text-label-sm text-[#00f0ff] uppercase tracking-[0.2em] mb-4 block">Practice Leadership</span>
+            <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white font-bold">Engineering Practice Leads</h2>
+            <p class="font-body-lg text-body-lg text-[#94a3b8] mt-4">
+              Our domain practice leads operate out of our Global Delivery HQ in HITEC City, Hyderabad — directing SAP, Cloud, and AI deployments for global enterprise clients.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Practice 1 -->
+          <div class="profile-card group relative overflow-hidden rounded-2xl p-8 bg-white/5 border border-white/10 hover:border-[#00f0ff]/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-[#00f0ff]/10 border border-[#00f0ff]/30 flex items-center justify-center text-[#00f0ff] mb-6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">SAP S/4HANA &amp; BTP Practice</h3>
+            <p class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-4">Hyderabad Global Delivery Center</p>
+            <p class="text-xs text-[#94a3b8] leading-relaxed">
+              Directing clean core extensibility, SAP BTP ABAP RAP development, OData service integration, and 24/7 AMS operations.
+            </p>
+          </div>
+          <!-- Practice 2 -->
+          <div class="profile-card group relative overflow-hidden rounded-2xl p-8 bg-white/5 border border-white/10 hover:border-[#8a2be2]/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-[#8a2be2]/10 border border-[#8a2be2]/30 flex items-center justify-center text-[#8a2be2] mb-6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Multi-Cloud Infrastructure</h3>
+            <p class="text-xs font-mono text-[#8a2be2] uppercase tracking-wider mb-4">Sovereign Pod Operations</p>
+            <p class="text-xs text-[#94a3b8] leading-relaxed">
+              Architecting AWS, Azure, GCP, and sovereign private cloud pods with automated Terraform IaC and Kubernetes orchestration.
+            </p>
+          </div>
+          <!-- Practice 3 -->
+          <div class="profile-card group relative overflow-hidden rounded-2xl p-8 bg-white/5 border border-white/10 hover:border-[#ffd700]/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-[#ffd700]/10 border border-[#ffd700]/30 flex items-center justify-center text-[#ffd700] mb-6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">AI &amp; Cognitive Engineering</h3>
+            <p class="text-xs font-mono text-[#ffd700] uppercase tracking-wider mb-4">AI Center of Excellence (CoE)</p>
+            <p class="text-xs text-[#94a3b8] leading-relaxed">
+              Engineered hybrid vector RAG systems, AR vision-picking smart glasses, and custom MCP model gateways for SAP backends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="py-32 px-mobile_margin md:px-desktop_margin text-center reveal-on-scroll">
+      <div class="max-w-3xl mx-auto glass-card p-16 rounded-3xl relative overflow-hidden group stagger-item" style="transition-delay: 200ms">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[120px] rounded-full group-hover:bg-primary/20 transition-all duration-1000"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 blur-[120px] rounded-full group-hover:bg-secondary/20 transition-all duration-1000"></div>
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-on-surface">Ready to work with a team that <span class="text-primary-container">gets it done?</span></h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+          We’re a young team building serious enterprise solutions. If you’re looking for a technology partner with fresh ideas, real expertise, and zero fluff — let's talk.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="contact.html" class="bg-[#00f0ff] text-black px-10 py-5 rounded-xl font-label-md text-label-md uppercase tracking-widest font-bold hover:shadow-[0_0_40px_rgba(0,240,255,0.4)] transition-all active:scale-95">
+            Schedule a Strategy Call
+          </a>
+          <a href="contact.html" class="border border-white/20 text-white px-10 py-5 rounded-xl font-label-md text-label-md uppercase tracking-widest font-bold hover:bg-white/5 transition-all active:scale-95">
+            Contact Solution Architects
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const observerOptions = {
+              threshold: 0.15,
+              rootMargin: '0px 0px -50px 0px'
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('active');
+                      observer.unobserve(entry.target);
+                  }
+              });
+          }, observerOptions);
+
+          document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+              observer.observe(el);
+          });
+      });
+  </script>
+</body>
+</html>

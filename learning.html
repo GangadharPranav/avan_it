@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning & Development — AVAN IT Solutions</title>
+  <meta name="description" content="Advance your technical skills with AVAN's Learning and Development courses. Register for our enterprise-grade bootcamps." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300E5FF'/><text y='.9em' font-size='75' x='10' font-weight='900'>AV</text></svg>" />
+
+  <!-- Stitch Design System -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "on-primary": "#00363d",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00626e",
+            "secondary": "#d1bcff",
+            "on-secondary": "#3c0090",
+            "secondary-container": "#7000ff",
+            "on-secondary-container": "#ddcdff",
+            "tertiary": "#ffeac0",
+            "tertiary-container": "#fec931",
+            "surface": "#131315",
+            "surface-dim": "#131315",
+            "surface-bright": "#39393b",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#1f1f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#bac9cc",
+            "outline": "#849396",
+            "outline-variant": "#3b494c",
+            "background": "#131315",
+            "on-background": "#e5e1e4",
+            "inverse-surface": "#e5e1e4",
+            "inverse-on-surface": "#303032",
+            "inverse-primary": "#006875",
+            "primary-fixed": "#9cf0ff",
+            "primary-fixed-dim": "#00daf3",
+            "surface-tint": "#00daf3",
+            "surface-variant": "#353437",
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          spacing: {
+            "desktop_margin": "48px",
+            "desktop_columns": "12",
+            "mobile_margin": "20px",
+            "mobile_columns": "4",
+            "max_container_width": "1280px",
+            "mobile_gutter": "16px",
+            "base_unit": "8px",
+            "desktop_gutter": "24px"
+          },
+          fontFamily: { "display-lg": ["Sora"], "headline-lg": ["Sora"], "headline-md": ["Sora"], "title-lg": ["Sora"], "body-lg": ["Sora"], "body-md": ["Sora"], "label-md": ["Sora"], "label-sm": ["Sora"] },
+          fontSize: {
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: transparent !important; color: #e5e1e4; font-family: 'Sora', sans-serif; overflow-x: hidden; }
+    .glass-card {
+      background: rgba(19, 19, 21, 0.28);
+      backdrop-filter: blur(16px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card:hover {
+      background: rgba(19, 19, 21, 0.42);
+      border-color: #00e5ff;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px -10px rgba(0, 229, 255, 0.2);
+    }
+    .text-glow { text-shadow: 0 0 15px rgba(195, 245, 255, 0.3); }
+    body > header, body > footer { display: none !important; }
+  </style>
+</head>
+<body class="bg-transparent selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+
+  <!-- Shared Nav + Video BG -->
+  <script src="js/components.js?v=1.0.6"></script>
+
+  <main class="flex-grow pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[500px] flex flex-col items-center justify-center text-center px-mobile_margin py-24 overflow-hidden">
+      <div class="max-w-4xl mx-auto space-y-8 relative z-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant text-primary font-label-sm text-label-sm uppercase tracking-widest">
+          <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">school</span>
+          Learning & Development
+        </div>
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white leading-tight">Master Tomorrow's <br><span class="text-primary text-glow">Enterprise Skills</span></h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Scale your knowledge with AVAN's official training pathways, covering ERP systems, cloud-native engineering, and advanced developer modules.</p>
+        <div class="flex flex-wrap justify-center gap-6 pt-4">
+          <a href="#courses" class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-md text-label-md flex items-center gap-2 hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all">
+            Browse Active Programs
+            <span class="material-symbols-outlined">arrow_downward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section id="courses" class="max-w-max_container_width mx-auto px-desktop_margin py-24">
+      <div class="space-y-4 mb-12">
+        <h2 class="font-headline-lg text-headline-lg text-white">Active Training Programs</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">Intensive, project-driven curriculums led by experienced enterprise consultants.</p>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Course 1 -->
+        <div class="glass-card rounded-xl p-8 flex flex-col justify-between h-full">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded bg-primary-container/20 text-primary border border-primary-container/30 font-label-sm text-label-sm uppercase">12 Weeks</span>
+              <span class="material-symbols-outlined text-primary text-3xl">dataset</span>
+            </div>
+            <h3 class="font-title-lg text-title-lg text-white font-bold">Enterprise ERP & SAP S/4HANA Bootcamp</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Understand core ERP module integrations, SAP S/4HANA data schemas, ABAP extension programming, and Fiori user experience setups.</p>
+            <div class="pt-4 border-t border-outline-variant/30 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> HANA DB Architectures</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Custom ABAP Modules</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> SAP Cloud Platform ALM</div>
+            </div>
+          </div>
+          <div class="pt-8 flex gap-4">
+            <a href="learning/sap-bootcamp.html" class="flex-1 text-center border border-primary text-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/10 transition-all">View Details</a>
+            <a href="apply.html?course=SAP+Bootcamp" class="flex-1 text-center bg-primary-container text-on-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:shadow-[0_0_15px_rgba(0,229,255,0.3)] transition-all">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="glass-card rounded-xl p-8 flex flex-col justify-between h-full">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded bg-primary-container/20 text-primary border border-primary-container/30 font-label-sm text-label-sm uppercase">8 Weeks</span>
+              <span class="material-symbols-outlined text-primary text-3xl">cloud</span>
+            </div>
+            <h3 class="font-title-lg text-title-lg text-white font-bold">Advanced Cloud & DevOps Architectures</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Master automated deployment pipelines, Kubernetes container orchestration, Terraform infrastructure layout, and multi-cloud resilience.</p>
+            <div class="pt-4 border-t border-outline-variant/30 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> GitOps & ArgoCD Pipelines</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Terraform modules for AWS/Azure</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Prometheus & Grafana alerts</div>
+            </div>
+          </div>
+          <div class="pt-8 flex gap-4">
+            <a href="learning/cloud-devops.html" class="flex-1 text-center border border-primary text-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/10 transition-all">View Details</a>
+            <a href="apply.html?course=Cloud+DevOps" class="flex-1 text-center bg-primary-container text-on-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:shadow-[0_0_15px_rgba(0,229,255,0.3)] transition-all">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="glass-card rounded-xl p-8 flex flex-col justify-between h-full">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded bg-primary-container/20 text-primary border border-primary-container/30 font-label-sm text-label-sm uppercase">10 Weeks</span>
+              <span class="material-symbols-outlined text-primary text-3xl">computer</span>
+            </div>
+            <h3 class="font-title-lg text-title-lg text-white font-bold">Full-Stack Enterprise Engineering</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Design highly responsive Next.js frontends integrated with REST/GraphQL middleware layers and backend databases engineered in Go.</p>
+            <div class="pt-4 border-t border-outline-variant/30 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> React/Next.js UI & state flow</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Go microservices & gRPC APIs</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Postgres optimization & caching</div>
+            </div>
+          </div>
+          <div class="pt-8 flex gap-4">
+            <a href="learning/full-stack-engineering.html" class="flex-1 text-center border border-primary text-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/10 transition-all">View Details</a>
+            <a href="apply.html?course=Full+Stack+Engineering" class="flex-1 text-center bg-primary-container text-on-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:shadow-[0_0_15px_rgba(0,229,255,0.3)] transition-all">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="glass-card rounded-xl p-8 flex flex-col justify-between h-full">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded bg-primary-container/20 text-primary border border-primary-container/30 font-label-sm text-label-sm uppercase">6 Weeks</span>
+              <span class="material-symbols-outlined text-primary text-3xl">security</span>
+            </div>
+            <h3 class="font-title-lg text-title-lg text-white font-bold">Zero-Trust Cybersecurity Operations</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Learn penetration testing mechanics, threat response logging, identity control policies, and compliance auditing workflows.</p>
+            <div class="pt-4 border-t border-outline-variant/30 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> SOC threat detection logs</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> IAM rules & network tunnels</div>
+              <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Compliance readiness checkups</div>
+            </div>
+          </div>
+          <div class="pt-8 flex gap-4">
+            <a href="learning/cybersecurity-zero-trust.html" class="flex-1 text-center border border-primary text-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/10 transition-all">View Details</a>
+            <a href="apply.html?course=Cybersecurity+Zero+Trust" class="flex-1 text-center bg-primary-container text-on-primary px-4 py-3 rounded-lg font-label-md text-label-md hover:shadow-[0_0_15px_rgba(0,229,255,0.3)] transition-all">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Inquiry -->
+    <section class="max-w-max_container_width mx-auto px-desktop_margin py-16 mb-24">
+      <div class="p-12 rounded-2xl bg-primary-container/10 border border-primary-container/20 text-center relative overflow-hidden group">
+        <h3 class="font-headline-md text-headline-md text-white mb-4 relative z-10">Looking for Custom Training?</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10">We host custom training cohorts and certification workshops for enterprise client teams.</p>
+        <a href="contact.html" class="bg-primary text-on-primary-fixed px-8 py-3 rounded-lg font-label-md text-label-md relative z-10 hover:scale-105 transition-transform inline-block">Contact Learning Team</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js?v=1.0.6"></script>
+</body>
+</html>
