@@ -34,36 +34,22 @@ const NAV_HTML = `
             <div class="mega-col">
               <div class="mega-col-label">SAP, S/4HANA &amp; Cloud</div>
               <a href="services.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🚀 All Services Overview</a>
-              <a href="sap-enterprise.html" class="mega-link flex items-center justify-between">
-                <span>⚙️ SAP, S/4HANA, Public &amp; Private Cloud</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#00e5ff]/20 text-[#00e5ff] uppercase tracking-wider">Cloud</span>
-              </a>
+              <a href="sap-enterprise.html" class="mega-link">⚙️ SAP, S/4HANA, Public &amp; Private Cloud</a>
               <a href="erp-solutions.html" class="mega-link">📊 Enterprise ERP Systems</a>
-              <a href="erp-custom-solutions.html" class="mega-link">🛠️ BTP Technical Support, Dev &amp; AMS</a>
+              <a href="erp-custom-solutions.html" class="mega-link">🛠️ SAP BTP, SAP CALM &amp; SAP Signavio</a>
               <a href="consulting-strategy.html" class="mega-link">💼 Strategic Business Consulting</a>
             </div>
             <div class="mega-col">
               <div class="mega-col-label">Cloud &amp; Infrastructure</div>
-              <a href="cloud-platforms.html" class="mega-link flex items-center justify-between">
-                <span>☁️ Public &amp; Private Cloud Infrastructure</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#9d4dff]/20 text-[#9d4dff] uppercase tracking-wider">Sovereign</span>
-              </a>
+              <a href="cloud-platforms.html" class="mega-link">☁️ Public &amp; Private Cloud Infrastructure</a>
               <a href="devops-pipelines.html" class="mega-link">🛠️ DevOps &amp; CI/CD Pipelines</a>
               <a href="cybersecurity-operations.html" class="mega-link">🔐 Zero-Trust Cybersecurity</a>
-              <a href="it-support.html" class="mega-link">🛎️ BTP Technical Support &amp; 24/7 AMS</a>
               <a href="data-analytics.html" class="mega-link">🗄️ Enterprise Data Lakes</a>
             </div>
             <div class="mega-col">
               <div class="mega-col-label">AI, Robotics &amp; Portals</div>
-              <a href="ai-machine-learning.html" class="mega-link flex items-center justify-between">
-                <span>🤖 AI &amp; Enterprise RAG</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#ffd700]/20 text-[#ffd700] uppercase tracking-wider">RAG</span>
-              </a>
-              <a href="iot-bots.html" class="mega-link flex items-center justify-between">
-                <span>🤖 IoT &amp; Autonomous Bots</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#00e5ff]/20 text-[#00e5ff] uppercase tracking-wider">IIoT</span>
-              </a>
-              <a href="sap-enterprise.html#sap-gui-ai-usecase" class="mega-link">🖥️ SAP GUI AI Assistant</a>
+              <a href="ai-machine-learning.html" class="mega-link">🤖 AI &amp; Enterprise RAG</a>
+              <a href="iot-bots.html" class="mega-link">🤖 IoT &amp; Autonomous Bots</a>
               <a href="web-app-dev.html" class="mega-link">💻 AI-Integrated Web &amp; Supplier Portals</a>
               <a href="mobile-development.html" class="mega-link">📱 Mobile &amp; AR Smart Glasses</a>
             </div>
@@ -72,7 +58,7 @@ const NAV_HTML = `
               <div class="mega-featured-card">
                 <div style="font-size:1.8rem;margin-bottom:6px">⚡</div>
                 <strong>SAP MCP &amp; RAG AI Integration</strong>
-                <p>Linking LLMs securely to SAP S/4HANA &amp; GUI backends.</p>
+                <p>Linking LLMs securely to SAP S/4HANA, SAP Public Cloud &amp; SAP CALM core backends.</p>
                 <a href="sap-enterprise.html" class="mega-cta">Explore SAP MCP →</a>
               </div>
             </div>
@@ -93,18 +79,16 @@ const NAV_HTML = `
             <div class="mega-col">
               <div class="mega-col-label">Our Organization</div>
               <a href="about.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🏢 About AVAN IT Solutions</a>
+              <a href="about.html#gdc-delivery" class="mega-link">🌐 Global Delivery Center (GDC)</a>
+              <a href="about.html#var-support" class="mega-link">🤝 VAR Support &amp; Partnerships</a>
               <a href="trust-center.html" class="mega-link">🛡️ Enterprise Trust Center</a>
               <a href="alumni.html" class="mega-link">🎓 AVAN Alumni Network</a>
             </div>
             <div class="mega-col">
-              <div class="mega-col-label">Case Studies &amp; Projects</div>
-              <a href="clients.html" class="mega-link flex items-center justify-between">
-                <span>🏆 All 6 Flagship Projects</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#00e5ff]/20 text-[#00e5ff] uppercase tracking-wider">New</span>
-              </a>
+              <div class="mega-col-label">Enterprise Use Cases</div>
+              <a href="clients.html" class="mega-link">🏆 Production Use Cases</a>
               <a href="clients.html#supplier-portal" class="mega-link">📋 Supplier Registration Portal</a>
               <a href="clients.html#smart-glasses" class="mega-link">🥽 AI Smart Glasses Warehouse</a>
-              <a href="clients.html#sap-gui-ai" class="mega-link">🖥️ SAP GUI AI Extension</a>
             </div>
             <div class="mega-col">
               <div class="mega-col-label">Innovation &amp; Talent</div>
@@ -129,15 +113,6 @@ const NAV_HTML = `
 
     <!-- Utilities -->
     <div class="nav-utils">
-      <button id="search-trigger-btn" class="nav-search-btn" aria-label="Search platform" title="Quick Search (Ctrl+K)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <span class="search-label hidden sm:inline">Search</span>
-        <span class="search-kbd hidden md:inline">⌘K</span>
-      </button>
-      <button id="theme-toggle-btn" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle light/dark theme" title="Switch Theme">
-        <span class="theme-icon-sun" style="display:none;">☀️</span>
-        <span class="theme-icon-moon">🌙</span>
-      </button>
       <a href="client-portal.html" class="btn-portal" id="nav-client-portal">Client Portal</a>
     </div>
 
@@ -166,7 +141,7 @@ const FOOTER_HTML = `
           </div>
         </a>
         <p style="color:var(--text-secondary);line-height:1.7;margin:20px 0 24px;max-width:300px;font-size:0.9rem">
-          AI-first enterprise transformation, cloud modernization, and SAP consulting. Headquartered in Hyderabad, India, delivering global business outcomes.
+          AI-first enterprise transformation, cloud modernization, and SAP consulting. Headquartered in Hyderabad, with our Delivery Center in East Godavari, Andhra Pradesh (533105), delivering global business outcomes.
         </p>
         <div class="footer-social">
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn">in</a>
@@ -180,7 +155,7 @@ const FOOTER_HTML = `
         <div class="footer-col">
           <h4>Capabilities</h4>
           <a href="services.html">All Services</a>
-          <a href="sap-enterprise.html">SAP S/4HANA &amp; AMS</a>
+          <a href="sap-enterprise.html">SAP S/4HANA &amp; Cloud</a>
           <a href="ai-machine-learning.html">AI &amp; Cognitive Engineering</a>
           <a href="iot-bots.html">IoT &amp; Autonomous Bots</a>
           <a href="data-analytics.html">Data Lakes &amp; Analytics</a>
@@ -191,13 +166,15 @@ const FOOTER_HTML = `
           <h4>Insights &amp; Ecosystem</h4>
           <a href="insights.html">Insights &amp; Research</a>
           <a href="innovation-labs.html">AI Innovation Hub (CoE)</a>
-          <a href="clients.html">Enterprise Clients</a>
+          <a href="clients.html">Enterprise Use Cases</a>
           <a href="tech-stack.html">Technology Ecosystem</a>
           <a href="alumni.html">AVAN Alumni Network</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <a href="about.html">About Us</a>
+          <a href="about.html#gdc-delivery">Global Delivery Center (GDC)</a>
+          <a href="about.html#var-support">VAR Support &amp; Partners</a>
           <a href="trust-center.html">Trust &amp; Compliance Center</a>
           <a href="careers.html">Career Opportunities</a>
           <a href="early-careers.html">Students &amp; Early Careers</a>
@@ -205,15 +182,16 @@ const FOOTER_HTML = `
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="footer-col">
-          <h4>Headquarters</h4>
+          <h4>Offices</h4>
           <a href="mailto:info@avanits.com">info@avanits.com</a>
           <a href="tel:+918001234567">+91 800 123 4567</a>
           <a href="contact.html#offices">Hyderabad, India 🇮🇳 (Global Delivery HQ)</a>
+          <a href="contact.html#offices">East Godavari, AP - 533105 🇮🇳 (Delivery Center)</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 AVAN IT Solutions Pvt. Ltd. All rights reserved. Built with ❤️ in Hyderabad, India.</p>
+      <p>© 2026 AVAN IT Solutions Pvt. Ltd. All rights reserved. Hyderabad &amp; East Godavari, Andhra Pradesh.</p>
       <div class="footer-bottom-links">
         <a href="trust-center.html">Privacy Policy</a>
         <a href="trust-center.html">Terms of Service</a>
@@ -269,17 +247,17 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="search-modal-card">
       <div class="search-input-header">
         <span class="material-symbols-outlined search-icon">search</span>
-        <input type="text" id="quick-search-input" placeholder="Type to search SAP, Cloud, AI RAG, Case Studies, AMS..." autocomplete="off" />
+        <input type="text" id="quick-search-input" placeholder="Type to search SAP, Cloud, AI RAG, Use Cases, DevOps..." autocomplete="off" />
         <span class="search-kbd-hint">ESC</span>
       </div>
       <div class="search-results-area">
         <div class="search-category-label">Quick Jump Suggestions</div>
         <div class="search-suggestions-grid" id="search-suggestions-list">
-          <a href="sap-enterprise.html" class="search-suggestion-item" data-keywords="sap s4hana mcp server gui abap ams support">
+          <a href="sap-enterprise.html" class="search-suggestion-item" data-keywords="sap s4hana mcp server calm signavio btp clean core">
             <span class="item-icon">⚙️</span>
             <div>
               <strong>SAP S/4HANA &amp; MCP Servers</strong>
-              <p>Clean core migration, SAP MCP servers, SAP GUI AI extension, 24/7 AMS</p>
+              <p>Clean core migration, SAP MCP servers, SAP BTP, CALM, Signavio</p>
             </div>
           </a>
           <a href="cloud-platforms.html" class="search-suggestion-item" data-keywords="public cloud private sovereign aws azure gcp infrastructure devops">
@@ -296,18 +274,18 @@ document.addEventListener('DOMContentLoaded', () => {
               <p>Hybrid vector RAG, custom UI chatbots, vision picking</p>
             </div>
           </a>
-          <a href="clients.html" class="search-suggestion-item" data-keywords="clients case studies supplier registration portal smart glasses projects">
+          <a href="clients.html" class="search-suggestion-item" data-keywords="clients use cases supplier registration portal smart glasses projects">
             <span class="item-icon">🏆</span>
             <div>
-              <strong>Case Studies &amp; Projects</strong>
-              <p>Supplier Registration Portal, Warehouse Vision Picking, SAP GUI AI</p>
+              <strong>Enterprise Use Cases &amp; Projects</strong>
+              <p>Supplier Registration Portal, Warehouse Vision Picking, Custom SAP MCP</p>
             </div>
           </a>
-          <a href="services.html" class="search-suggestion-item" data-keywords="services implementations development technical support ams">
+          <a href="services.html" class="search-suggestion-item" data-keywords="services implementations development technical support cloud ai sap">
             <span class="item-icon">🚀</span>
             <div>
               <strong>Master Services Overview</strong>
-              <p>Implementations, Custom Development, Support &amp; 24/7 AMS</p>
+              <p>Implementations, Custom Development, Cloud &amp; AI Engineering</p>
             </div>
           </a>
           <a href="contact.html" class="search-suggestion-item" data-keywords="contact consultation office hyderabad phone email">
