@@ -752,6 +752,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialVideo = playlist[0];
     const hasMultipleVideos = playlist.length > 1;
 
+    const posterUrl = isSubdirVideo ? '../images/hero-bg-3d.png' : 'images/hero-bg-3d.png';
+
     const videoBgHTML = `
       <div id="global-video-bg" aria-hidden="true">
         <video
@@ -763,6 +765,7 @@ document.addEventListener('DOMContentLoaded', () => {
           webkit-playsinline
           x5-playsinline
           preload="auto"
+          poster="${posterUrl}"
         >
           <source src="${initialVideo}" type="video/mp4">
           <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-blue-and-purple-liquid-waves-33824-large.mp4" type="video/mp4">
@@ -781,10 +784,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bgVideo) {
       let currentVideoIndex = 0;
 
-      // Ensure inline playback attributes on mobile browsers
+      // Ensure inline playback attributes on mobile browsers (iOS Safari & Android Chrome)
       bgVideo.setAttribute('playsinline', '');
       bgVideo.setAttribute('webkit-playsinline', '');
+      bgVideo.setAttribute('x5-playsinline', '');
+      bgVideo.playsInline = true;
       bgVideo.muted = true;
+      bgVideo.defaultMuted = true;
+
+      if (hasMultipleVideos) {
+        bgVideo.removeAttribute('loop');
+      } else {
+        bgVideo.setAttribute('loop', '');
+      }
 
       // Handle continuous playlist sequential looping
       bgVideo.addEventListener('ended', () => {
@@ -809,6 +821,13 @@ document.addEventListener('DOMContentLoaded', () => {
       // Trigger playback on first user touch/scroll if blocked by mobile browser power-saving policy
       ['touchstart', 'touchend', 'click', 'scroll'].forEach(evtType => {
         document.addEventListener(evtType, playVideoMuted, { passive: true, once: true });
+      });
+
+      // Resume playback on tab focus or unlock
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+          playVideoMuted();
+        }
       });
 
       // Hero text slide-in logic for index page

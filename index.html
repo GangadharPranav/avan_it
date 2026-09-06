@@ -89,6 +89,61 @@
       text-shadow: none !important;
       filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
     }
+
+    /* Mobile Responsive Scrim & Section Spacing */
+    @media (max-width: 768px) {
+      .chapter-scrim {
+        padding: 24px 16px !important;
+        border-radius: 16px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+      }
+      #chapter-01 {
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        min-height: auto !important;
+      }
+      section[id^="chapter-"] {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        min-height: auto !important;
+      }
+      .chapter-scrim h1 {
+        font-size: clamp(1.85rem, 7.5vw, 2.75rem) !important;
+        line-height: 1.15 !important;
+      }
+      .chapter-scrim h2 {
+        font-size: clamp(1.35rem, 5.5vw, 2rem) !important;
+        line-height: 1.25 !important;
+      }
+      #chapter-01 .flex.flex-wrap a,
+      #chapter-06 .flex a,
+      #chapter-07 .flex a {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 14px 18px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .chapter-scrim {
+        padding: 18px 12px !important;
+        border-radius: 14px !important;
+      }
+      #chapter-01 {
+        padding-top: 86px !important;
+        padding-bottom: 32px !important;
+      }
+      section[id^="chapter-"] {
+        padding-top: 36px !important;
+        padding-bottom: 36px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-transparent text-[#f1f5f9]">
@@ -99,12 +154,13 @@
       id="bg-video"
       autoplay
       muted
-      loop
       playsinline
       webkit-playsinline
       x5-playsinline
       preload="auto"
+      poster="images/hero-bg-3d.png"
     >
+      <source src="images/index_page.mp4" type="video/mp4">
       <source src="images/its_an_it_solutions_company_ma.mp4" type="video/mp4">
       <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-blue-and-purple-liquid-waves-33824-large.mp4" type="video/mp4">
       <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-glowing-blue-particles-wave-animation-36024-large.mp4" type="video/mp4">
@@ -331,141 +387,14 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- CHAPTER 06 // VERIFIED ENTERPRISE USE CASES & PROOF           -->
+    <!-- CHAPTER 06 // RESOLUTION & CONTACT                          -->
     <!-- ═══════════════════════════════════════════════════════════ -->
     <section id="chapter-06" class="relative min-h-screen flex items-center py-28 px-6 md:px-16 lg:px-24">
-      <div class="w-full max-w-[1360px] mx-auto">
-        
-        <div class="w-full chapter-scrim space-y-8">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-white/10">
-            <div>
-              <div class="flex items-center gap-3 mb-2">
-                <span class="font-mono text-xs text-[#00f0ff] uppercase tracking-widest">CHAPTER 06 // VERIFIED PROOF</span>
-                <span class="w-12 h-px bg-[#00f0ff]/40"></span>
-              </div>
-              <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-                Production Use Cases &amp; <span class="text-[#00f0ff]">Engineered Outcomes.</span>
-              </h2>
-            </div>
-            <p class="text-[#94a3b8] text-sm md:text-base leading-relaxed max-w-xl">
-              Empirical systems deployed into production for enterprise manufacturers, logistics hubs, and global businesses. Designed with clean core governance, high-availability multi-cloud hosting, and zero-trust protocol bridges.
-            </p>
-          </div>
-
-          <!-- Full Single Grid of All Provided Production Use Cases -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-xs pt-4">
-            <!-- Use Case 1 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#00f0ff]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#00f0ff] px-2.5 py-1 rounded-full border border-[#00f0ff]/30 bg-[#00f0ff]/10">ERP Supply Chain</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#00f0ff] font-bold text-sm mb-2">// Supplier Onboarding Portal</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  Automated vendor registration with OCR GST/PAN tax validation, mutual NDA execution, and zero-touch SAP S/4HANA Business Partner API sync.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">SAP BTP · React · OData API</div>
-            </div>
-
-            <!-- Use Case 2 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#8a2be2]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#8a2be2] px-2.5 py-1 rounded-full border border-[#8a2be2]/30 bg-[#8a2be2]/10">Logistics &amp; AR</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#8a2be2] font-bold text-sm mb-2">// AI Smart Glasses Warehouse</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  Hands-free vision picking for warehouse operators with real-time barcode visual recognition and instant SAP EWM inventory synchronization.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">Android AR · Edge AI · SAP EWM</div>
-            </div>
-
-            <!-- Use Case 3 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#9d4dff]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#9d4dff] px-2.5 py-1 rounded-full border border-[#9d4dff]/30 bg-[#9d4dff]/10">AI Gateways</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#9d4dff] font-bold text-sm mb-2">// Custom SAP MCP Server</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  Secure Model Context Protocol server linking LLMs securely to SAP S/4HANA, SAP Public Cloud, and SAP CALM under OAuth2/SAML SSO governance.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">Model Context Protocol · OAuth2 SSO</div>
-            </div>
-
-            <!-- Use Case 4 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#ffd700]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#ffd700] px-2.5 py-1 rounded-full border border-[#ffd700]/30 bg-[#ffd700]/10">Knowledge Mesh</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#ffd700] font-bold text-sm mb-2">// Enterprise RAG Knowledge Graph</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  Sub-second hybrid vector search indexing millions of documents with verifiable source citations and sovereign LLM inference nodes.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">Milvus · Neo4j · Hybrid LLM Mesh</div>
-            </div>
-
-            <!-- Use Case 5 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#00ffaa]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#00ffaa] px-2.5 py-1 rounded-full border border-[#00ffaa]/30 bg-[#00ffaa]/10">Conversational AI</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#00ffaa] font-bold text-sm mb-2">// Custom UI Chatbots</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  High-throughput conversational AI assistants engineered with low latency, multi-turn context memory, and secure ERP transaction trigger sync.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">Multi-Turn Memory · ERP Session Sync</div>
-            </div>
-
-            <!-- Use Case 6 -->
-            <div class="p-6 rounded-2xl bg-transparent border border-white/10 hover:border-[#00f0ff]/50 hover:bg-white/[0.02] transition-all flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#00f0ff] px-2.5 py-1 rounded-full border border-[#00f0ff]/30 bg-[#00f0ff]/10">Clean Core</span>
-                  <span class="text-[10px] text-[#849396]">Production</span>
-                </div>
-                <div class="text-[#00f0ff] font-bold text-sm mb-2">// SAP BTP, CALM &amp; Signavio</div>
-                <div class="text-[#cbd5e1] text-xs leading-relaxed mb-4">
-                  Full-lifecycle observability, business process mining, and clean core RAP/CAP side-by-side extensibility across hybrid landscapes.
-                </div>
-              </div>
-              <div class="text-[11px] text-[#849396] pt-3 border-t border-white/10">SAP Cloud ALM · Signavio · RAP</div>
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-white/10">
-            <span class="text-xs text-[#849396]">All systems deployed in high-availability enterprise environments.</span>
-            <a href="clients.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#00f0ff] uppercase tracking-wider hover:underline">
-              Explore All Detailed Specs in Client Showcase
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- CHAPTER 07 // RESOLUTION & CONTACT                          -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <section id="chapter-07" class="relative min-h-screen flex items-center py-28 px-6 md:px-16 lg:px-24">
       <div class="w-full max-w-[1360px] mx-auto text-center">
         
         <div class="max-w-3xl mx-auto chapter-scrim space-y-8 border border-[#00f0ff]/30">
           <div class="flex items-center justify-center gap-3">
-            <span class="font-mono text-xs text-[#00f0ff] uppercase tracking-widest">CHAPTER 07 // RESOLUTION</span>
+            <span class="font-mono text-xs text-[#00f0ff] uppercase tracking-widest">CHAPTER 06 // RESOLUTION</span>
             <span class="w-12 h-px bg-[#00f0ff]/40"></span>
           </div>
 
