@@ -12,7 +12,8 @@ const NAV_HTML = `
     <!-- Logo -->
     <a href="index.html" class="nav-logo" aria-label="AVAN IT Solutions — Home" style="text-decoration:none; display:flex; align-items:center; gap:10px; flex-shrink:0;">
       <div style="position:relative; display:flex; align-items:center;">
-        <img src="images/favicon-192.png" alt="AVAN IT Solutions Logo" class="site-logo-img" style="width:36px; height:36px; object-fit:contain; border-radius:8px;" />
+        <img src="images/logo.png" alt="AVAN IT Solutions Logo" class="site-logo-img" style="display:none; width:auto; height:36px; object-fit:contain;" onload="this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none';" />
+        <div class="logo-mark" style="width:36px;height:36px;font-size:0.95rem;margin:0;" aria-hidden="true">AV</div>
       </div>
       <div class="nav-logo-text" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
         <span style="font-size:1.05rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; line-height:1.1; white-space:nowrap;">AVAN IT Solutions</span>
@@ -134,8 +135,9 @@ const FOOTER_HTML = `
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:flex; align-items:center; gap:10px; text-decoration:none;">
-          <div style="position:relative; display:flex; align-items:center;">
-            <img src="images/favicon-192.png" alt="AVAN IT Solutions Logo" class="site-logo-img-footer" style="width:36px; height:36px; object-fit:contain; border-radius:8px;" />
+          <div style="position:relative; display:flex;">
+            <img src="images/logo.png" alt="AVAN IT Solutions Logo" class="site-logo-img-footer" style="display:none; width:auto; height:40px; object-fit:contain;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" />
+            <div class="logo-mark" style="width:40px;height:40px;font-size:1rem;margin:0;" aria-hidden="true">AV</div>
           </div>
           <div style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
             <span style="font-size:1.1rem; font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-0.5px; background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; line-height:1;">AVAN IT Solutions</span>
