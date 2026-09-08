@@ -196,7 +196,7 @@ const FOOTER_HTML = `
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 AVAN IT Solutions Pvt. Ltd. All rights reserved. Hyderabad &amp; East Godavari, Andhra Pradesh.</p>
+      <p>© 2026 AVAN IT Solutions. All rights reserved. Hyderabad &amp; East Godavari, Andhra Pradesh.</p>
       <div class="footer-bottom-links">
         <a href="trust-center.html">Privacy Policy</a>
         <a href="trust-center.html">Terms of Service</a>
