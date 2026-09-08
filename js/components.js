@@ -10,9 +10,9 @@ const NAV_HTML = `
 <nav class="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <!-- Logo -->
-    <a href="index.html" class="nav-logo" aria-label="AVAN IT Solutions — Home" style="text-decoration:none; display:flex; align-items:center; gap:10px; flex-shrink:0;">
+    <a href="index.html" class="nav-logo" aria-label="AVAN IT Solutions — Connecting Intelligence &amp; Avant-Garde Innovation" style="text-decoration:none; display:flex; align-items:center; gap:10px; flex-shrink:0;">
       <div style="position:relative; display:flex; align-items:center;">
-        <img src="images/logo.png" alt="AVAN IT Solutions Logo" class="site-logo-img" style="display:none; width:auto; height:36px; object-fit:contain;" onload="this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none';" />
+        <img src="images/logo.png" alt="AVAN IT Solutions Logo" class="site-logo-img" width="99" height="36" style="display:none; width:auto; height:36px; object-fit:contain;" onload="this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none';" />
         <div class="logo-mark" style="width:36px;height:36px;font-size:0.95rem;margin:0;" aria-hidden="true">AV</div>
       </div>
       <div class="nav-logo-text" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
@@ -22,7 +22,7 @@ const NAV_HTML = `
     </a>
 
     <!-- Desktop Links -->
-    <div class="nav-links" id="nav-links" role="menubar">
+    <div class="nav-links" id="nav-links">
 
       <!-- What We Do — mega-menu -->
       <div class="nav-mega" data-mega="services">
@@ -754,7 +754,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialVideo = playlist[0];
     const hasMultipleVideos = playlist.length > 1;
 
-    const posterUrl = isSubdirVideo ? '../images/hero-bg-3d.png' : 'images/hero-bg-3d.png';
+    const posterUrl = isSubdirVideo ? '../images/hero-bg-3d.webp' : 'images/hero-bg-3d.webp';
 
     const videoBgHTML = `
       <div id="global-video-bg" aria-hidden="true">
@@ -766,7 +766,7 @@ document.addEventListener('DOMContentLoaded', () => {
           playsinline
           webkit-playsinline
           x5-playsinline
-          preload="auto"
+          preload="metadata"
           poster="${posterUrl}"
         >
           <source src="${initialVideo}" type="video/mp4">
@@ -843,7 +843,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Video background failed to load, falling back to static image');
         const videoBg = document.getElementById('global-video-bg');
         if (videoBg) {
-          videoBg.innerHTML = `<div style="width:100%;height:100%;background:var(--bg-dark);background-image:url('images/hero-bg-3d.png');background-size:cover;background-position:center;"></div>`;
+          videoBg.innerHTML = `<div style="width:100%;height:100%;background:var(--bg-dark);background-image:url('${posterUrl}');background-size:cover;background-position:center;"></div>`;
         }
       });
     }
