@@ -35,6 +35,8 @@ const NAV_HTML = `
               <div class="mega-col-label">SAP, S/4HANA &amp; Cloud</div>
               <a href="services.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🚀 All Services Overview</a>
               <a href="sap-enterprise.html" class="mega-link">⚙️ SAP, S/4HANA, Public &amp; Private Cloud</a>
+              <a href="services.html#sap-joule" class="mega-link">✨ SAP Joule Business AI</a>
+              <a href="services.html#joule-agents" class="mega-link">🧠 Joule Autonomous Agents</a>
               <a href="sap-ams-support.html" class="mega-link">🛠️ Implementation, Dev, Support &amp; AMS</a>
               <a href="erp-solutions.html" class="mega-link">📊 Enterprise ERP Systems</a>
               <a href="erp-custom-solutions.html" class="mega-link">🧩 SAP BTP, SAP CALM &amp; SAP Signavio</a>
@@ -161,6 +163,8 @@ const FOOTER_HTML = `
           <h4>Capabilities</h4>
           <a href="services.html">All Services</a>
           <a href="sap-enterprise.html">SAP S/4HANA &amp; Cloud</a>
+          <a href="services.html#sap-joule">SAP Joule Business AI</a>
+          <a href="services.html#joule-agents">Joule Autonomous Agents</a>
           <a href="sap-ams-support.html">SAP Implementation &amp; AMS</a>
           <a href="ai-machine-learning.html">AI &amp; Cognitive Engineering</a>
           <a href="iot-bots.html">IoT &amp; Autonomous Bots</a>
