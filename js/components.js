@@ -80,6 +80,7 @@ const NAV_HTML = `
             <div class="mega-col">
               <div class="mega-col-label">Our Organization</div>
               <a href="about.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🏢 About AVAN IT Solutions</a>
+              <a href="about.html#our-organization" class="mega-link">🏛️ Organizational Structure</a>
               <a href="about.html#gdc-delivery" class="mega-link">🌐 Global Delivery Center (GDC)</a>
               <a href="about.html#var-support" class="mega-link">🤝 VAR Support &amp; Partnerships</a>
               <a href="trust-center.html" class="mega-link">🛡️ Enterprise Trust Center</a>
@@ -178,6 +179,7 @@ const FOOTER_HTML = `
         <div class="footer-col">
           <h4>Company</h4>
           <a href="about.html">About Us</a>
+          <a href="about.html#our-organization">Our Organization</a>
           <a href="about.html#gdc-delivery">Global Delivery Center (GDC)</a>
           <a href="about.html#var-support">VAR Support &amp; Partners</a>
           <a href="trust-center.html">Trust &amp; Compliance Center</a>
