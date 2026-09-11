@@ -36,7 +36,6 @@ const NAV_HTML = `
               <a href="services.html" class="mega-link" style="color:var(--cyan); font-weight:800;">🚀 All Services Overview</a>
               <a href="sap-enterprise.html" class="mega-link">⚙️ SAP, S/4HANA, Public &amp; Private Cloud</a>
               <a href="services.html#sap-joule" class="mega-link">✨ SAP Joule Business AI</a>
-              <a href="services.html#joule-agents" class="mega-link">🧠 Joule Autonomous Agents</a>
               <a href="sap-ams-support.html" class="mega-link">🛠️ Implementation, Dev, Support &amp; AMS</a>
               <a href="erp-solutions.html" class="mega-link">📊 Enterprise ERP Systems</a>
               <a href="erp-custom-solutions.html" class="mega-link">🧩 SAP BTP, SAP CALM &amp; SAP Signavio</a>
@@ -52,6 +51,7 @@ const NAV_HTML = `
             <div class="mega-col">
               <div class="mega-col-label">AI, Robotics &amp; Portals</div>
               <a href="ai-machine-learning.html" class="mega-link">🤖 AI &amp; Enterprise RAG</a>
+              <a href="services.html#joule-agents" class="mega-link">🧠 Joule Autonomous Agents</a>
               <a href="iot-bots.html" class="mega-link">🤖 IoT &amp; Autonomous Bots</a>
               <a href="web-app-dev.html" class="mega-link">💻 AI-Integrated Web &amp; Supplier Portals</a>
               <a href="mobile-development.html" class="mega-link">📱 Mobile &amp; AR Smart Glasses</a>
@@ -164,9 +164,9 @@ const FOOTER_HTML = `
           <a href="services.html">All Services</a>
           <a href="sap-enterprise.html">SAP S/4HANA &amp; Cloud</a>
           <a href="services.html#sap-joule">SAP Joule Business AI</a>
-          <a href="services.html#joule-agents">Joule Autonomous Agents</a>
           <a href="sap-ams-support.html">SAP Implementation &amp; AMS</a>
           <a href="ai-machine-learning.html">AI &amp; Cognitive Engineering</a>
+          <a href="services.html#joule-agents">Joule Autonomous Agents</a>
           <a href="iot-bots.html">IoT &amp; Autonomous Bots</a>
           <a href="data-analytics.html">Data Lakes &amp; Analytics</a>
           <a href="cloud-platforms.html">Cloud Architecture</a>
