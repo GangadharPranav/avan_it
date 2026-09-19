@@ -160,17 +160,33 @@ const FOOTER_HTML = `
       </div>
       <div class="footer-links-grid">
         <div class="footer-col">
-          <h4>Capabilities</h4>
-          <a href="services.html">All Services</a>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">All Services Overview</a>
           <a href="sap-enterprise.html">SAP S/4HANA &amp; Cloud</a>
           <a href="services.html#sap-joule">SAP Joule Business AI</a>
-          <a href="sap-ams-support.html">SAP Implementation &amp; AMS</a>
+          <a href="services.html#joule-agents">Joule Autonomous Agents</a>
+          <a href="ai-machine-learning.html">AI &amp; Enterprise RAG</a>
+          <a href="clients.html">Production Use Cases</a>
+          <a href="innovation-labs.html">AI Innovation Hub (CoE)</a>
+          <a href="about.html#gdc-delivery">Global Delivery Center</a>
+          <a href="careers.html">Career Opportunities</a>
+          <a href="trust-center.html">Trust &amp; Compliance</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Capabilities</h4>
+          <a href="services.html">Services Overview</a>
+          <a href="sap-enterprise.html">SAP S/4HANA &amp; Clean Core</a>
+          <a href="sap-ams-support.html">Implementation &amp; AMS</a>
+          <a href="erp-solutions.html">Enterprise ERP Systems</a>
+          <a href="erp-custom-solutions.html">SAP BTP &amp; Custom Dev</a>
           <a href="ai-machine-learning.html">AI &amp; Cognitive Engineering</a>
           <a href="services.html#joule-agents">Joule Autonomous Agents</a>
           <a href="iot-bots.html">IoT &amp; Autonomous Bots</a>
           <a href="data-analytics.html">Data Lakes &amp; Analytics</a>
           <a href="cloud-platforms.html">Cloud Architecture</a>
-          <a href="cybersecurity-operations.html">Cybersecurity Operations</a>
+          <a href="cybersecurity-operations.html">SOC &amp; Cyber Operations</a>
         </div>
         <div class="footer-col">
           <h4>Insights &amp; Ecosystem</h4>
@@ -179,10 +195,13 @@ const FOOTER_HTML = `
           <a href="clients.html">Production Use Cases</a>
           <a href="tech-stack.html">Technology Ecosystem</a>
           <a href="alumni.html">AVAN Alumni Network</a>
+          <a href="early-careers.html">Students &amp; Early Careers</a>
+          <a href="about.html#var-support">VAR Alliances &amp; Resellers</a>
+          <a href="learning.html">Learning &amp; Development</a>
         </div>
         <div class="footer-col">
-          <h4>Company</h4>
-          <a href="about.html">About Us</a>
+          <h4>Company &amp; Trust</h4>
+          <a href="about.html">About AVAN IT Solutions</a>
           <a href="about.html#our-organization">Our Organization</a>
           <a href="about.html#gdc-delivery">Global Delivery Center (GDC)</a>
           <a href="about.html#var-support">VAR Support &amp; Partners</a>
@@ -193,11 +212,12 @@ const FOOTER_HTML = `
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="footer-col">
-          <h4>Offices</h4>
+          <h4>Offices &amp; Contact</h4>
           <a href="mailto:info@avanits.com">info@avanits.com</a>
           <a href="tel:+918001234567">+91 800 123 4567</a>
           <a href="contact.html#offices">Hyderabad, India 🇮🇳 (Global Delivery HQ)</a>
           <a href="contact.html#offices">East Godavari, AP - 533105 🇮🇳 (Delivery Center)</a>
+          <a href="client-portal.html" style="color:var(--cyan); font-weight:700; margin-top:8px; display:inline-flex; align-items:center; gap:4px;">Client Portal SSO →</a>
         </div>
       </div>
     </div>
